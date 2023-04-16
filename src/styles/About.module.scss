@@ -1,0 +1,26 @@
+@import 'Variables';
+
+.about {
+    background-color: $primary-color;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    background-image: url('../img/SVG/Recurso9.svg');
+    background-repeat: no-repeat;
+    background-size: 42.5%;
+    background-position: left center;
+
+    .line {
+        width: 100px;
+        height: 3px;
+        background-color: #fff;
+        display: flex;
+        justify-self: end;
+    }
+
+    @include small-screen {
+        min-height: 400px;
+        background-image: none;
+    }
+
+}

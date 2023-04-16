@@ -1,0 +1,79 @@
+@import 'Variables';
+
+.line {
+    width: 100px;
+    height: 3px;
+    background-color: $secondary-color;
+    display: block;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    overflow: initial;
+
+    .card {
+        flex: 0 0 22.5%;
+        max-width: 22.5%;
+        padding: .5rem 1rem;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        box-shadow: $shadow;
+        transition: $transition;
+        -webkit-transition: $transition;
+        -moz-transition: $transition;
+        -ms-transition: $transition;
+        -o-transition: $transition;
+
+        &:hover {
+            box-shadow: $shadow-hover;
+        }
+    }
+
+}
+@include small-screen {
+    .servicios {
+        background-image: url('../img/SVG/BannerImgBottomMobile.svg');
+        background-position: top center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+    .cards {
+
+        .card {
+            flex: 0 0 100%;
+            max-width: 100%;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            gap: 2rem;
+
+            img {
+                width: 100px;
+                height: 100px;
+                object-fit: contain;
+            }
+        }
+    }
+
+}
+
+@include medium-screen {
+    .servicios {
+        background-image: none;
+    }
+
+    .cards {
+        .card {
+            flex: 0 0 45%;
+            max-width: 45%;
+        }
+    }
+}

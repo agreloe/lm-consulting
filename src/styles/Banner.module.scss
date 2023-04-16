@@ -1,0 +1,23 @@
+@import 'Variables';
+
+.banner {
+    min-height: 600px;
+    background-image: url('../img/SVG/BannerImg.svg');
+    background-position: top right;
+    background-size: 42.5%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    margin-top: $navHeight;
+
+    @include small-screen {
+        background-image: url('../img/SVG/BannerImgMobile.svg');
+        min-height: 400px;
+        background-size: cover;
+        background-position: 50%;
+    }
+
+    @include xl-screen {
+        background-size: 30%;
+    }
+}

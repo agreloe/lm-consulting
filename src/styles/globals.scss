@@ -1,0 +1,116 @@
+@import 'Variables';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+:root {
+  @include body($paragraph);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overscroll-behavior: none;
+    scroll-behavior: smooth;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: $navHeight;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  opacity: 0;
+  z-index: -1;
+  transition: $transition;
+}
+
+body.opacity::after {
+  opacity: 1;
+  z-index: 10;
+}
+
+
+h1 {
+  @include title($header1, 5px);
+}
+
+h2 {
+  @include title($header2, 5px);
+}
+
+h3 {
+  @include title($header3, 4px);
+}
+
+h4 {
+  @include title($header4, 4px);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+ul {
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    overflow: hidden;
+}
+
+ul {
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+
+  &:visited {
+      color: inherit;
+  }
+}
+
+.wrap {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.button {
+  @include button($primary-color);
+}
+
+@include small-screen {
+  h1 {
+    font-size: $header3;
+  }
+  h2 {
+    font-size: $header4;
+  }
+  h3 {
+    font-size: $header5;
+  }
+  h4 {
+    font-size: $header5;
+  }
+}
+
