@@ -4,7 +4,7 @@
     min-height: 600px;
     background-image: url('../img/SVG/BannerImg.svg');
     background-position: top right;
-    background-size: 42.5%;
+    background-size: contain;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
@@ -17,7 +17,7 @@
         background-position: 50%;
     }
 
-    @include xl-screen {
-        background-size: 30%;
+    @include medium-screen {
+        background-size: 40%;
     }
 }

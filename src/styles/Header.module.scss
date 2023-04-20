@@ -8,6 +8,12 @@
     width: 100%;
     position: fixed;
     height: $navHeight;
+    top: 0;
+    transition: $transition;
+
+    &.hidden {
+        top: -80px;
+    }
 
     .logo {
         @include title($header5, 3px);

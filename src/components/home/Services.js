@@ -1,29 +1,50 @@
 import React from 'react'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '@/styles/Services.module.scss'
 
 export default function Services() {
 
     const servicios = [
         {
-            'title': 'Lorem Ipsum',
-            'body': 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae modi unde error, deserunt iste ut dicta',
-            'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png'
+            'title': 'Búsqueda y Selección de personal ',
+            'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png',
+            'url': '/'
         },
         {
-            'title': 'Lorem Ipsum',
-            'body': 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae modi unde error, deserunt iste ut dicta',
-            'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png'
+            'title': 'Análisis y diagnóstico de Estructuras y Puestos',
+            'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png',
+            'url': '/'
         },
         {
-            'title': 'Lorem Ipsum',
-            'body': 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae modi unde error, deserunt iste ut dicta',
-            'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png'
+            'title': 'Asesoría experta para la Gestión Integral de Recursos Humanos',
+            'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png',
+            'url': '/'
         },
         {
-            'title': 'Lorem Ipsum',
-            'body': 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestiae modi unde error, deserunt iste ut dicta',
-            'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png'
+            'title': 'Planificación, Mejora e Implementación de políticas',
+            'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png',
+            'url': '/'
+        },
+        {
+            'title': 'Coaching Ejecutivo y Life Coaching',
+            'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png',
+            'url': '/'
+        },
+        {
+            'title': 'Gestión del desempeño por competencias',
+            'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png',
+            'url': '/'
+        },
+        {
+            'title': 'Desarrollo y retención de Talento',
+            'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png',
+            'url': '/'
+        },
+        {
+            'title': 'Desarrollo de procesos para una Comunicación Efectiva',
+            'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png',
+            'url': '/'
         },
     ]
 
@@ -35,12 +56,13 @@ export default function Services() {
             {
                 servicios.map((item,index)=>(
 
-                    <div key={index} className={`${styles.card}`}>
-                        <Image src={item.icon} width={50} height={50} alt='/' />
-                        <div className='pt-8 sm:pt-0'>
-                            <h4>{item.title}</h4>
-                            <p>{item.body}</p>
+                    <div key={index} className={`${styles.card} min-h-[220px] sm:min-h-[180px]`}>
+                        <div className='flex gap-4 flex-col sm:flex-row'>
+                            <Image src={item.icon} width={50} height={50} alt='/' />
+                            <h5>{item.title}</h5>
                         </div>
+
+                        <Link className={`${styles['see-more']}`} href={item.url}>Ver más</Link>
                     </div>
                 ))
             }

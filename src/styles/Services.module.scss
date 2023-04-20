@@ -1,5 +1,9 @@
 @import 'Variables';
 
+#servicios {
+    scroll-margin-top: 4rem;
+}
+
 .line {
     width: 100px;
     height: 3px;
@@ -9,16 +13,16 @@
 
 .cards {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: stretch;
+    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 1.25rem;
     overflow: initial;
 
     .card {
-        flex: 0 0 22.5%;
-        max-width: 22.5%;
-        padding: .5rem 1rem;
+        flex: 0 0 30%;
+        max-width: 30%;
+        padding: 1.5rem;
         border-radius: 10px;
         -webkit-border-radius: 10px;
         -moz-border-radius: 10px;
@@ -30,6 +34,37 @@
         -moz-transition: $transition;
         -ms-transition: $transition;
         -o-transition: $transition;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 1rem;
+
+        img {
+            object-fit: contain;
+            min-width: 50px;
+            min-height: 50px;
+        }
+
+        .see-more {
+            @include button($primary-color);
+            align-self: flex-end;
+        }
+
+
+        /* .title,
+        .description {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+        }
+
+        .title {
+            -webkit-line-clamp: 4;
+            line-clamp: 4;
+        } */
+
 
         &:hover {
             box-shadow: $shadow-hover;
@@ -46,20 +81,14 @@
     }
 
     .cards {
+        justify-content: center;
 
         .card {
             flex: 0 0 100%;
             max-width: 100%;
-            display: flex;
-            align-items: center;
             text-align: left;
             gap: 2rem;
 
-            img {
-                width: 100px;
-                height: 100px;
-                object-fit: contain;
-            }
         }
     }
 
@@ -71,9 +100,12 @@
     }
 
     .cards {
+        justify-content: center;
+
         .card {
             flex: 0 0 45%;
             max-width: 45%;
+
         }
     }
 }

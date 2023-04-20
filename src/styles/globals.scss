@@ -10,6 +10,12 @@
 
 :root {
   @include body($paragraph);
+  scroll-padding-top: 5rem;
+
+}
+
+body {
+  scroll-behavior: smooth !important;
 }
 
 *,
@@ -19,8 +25,8 @@
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    overscroll-behavior: none;
-    scroll-behavior: smooth;
+    //overscroll-behavior: none;
+
 }
 
 body::after {
@@ -56,6 +62,10 @@ h3 {
 
 h4 {
   @include title($header4, 4px);
+}
+
+h5 {
+  @include title($header5, 3px)
 }
 
 h1,

@@ -4,6 +4,7 @@ import Banner from '@/components/home/Banner'
 import Services from '@/components/home/Services'
 import About from '@/components/home/About'
 import Contact from '@/components/home/Contact'
+import How from '@/components/home/How'
 
 export default function Home() {
   return (
@@ -33,6 +34,7 @@ export default function Home() {
       <Banner />
       <About />
       <Services />
+      <How />
       <Contact />
     </Fragment>
   )

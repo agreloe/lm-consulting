@@ -1,5 +1,7 @@
 @import 'Variables';
 
+
+
 .about {
     background-color: $primary-color;
     min-height: 600px;
@@ -7,7 +9,7 @@
     align-items: center;
     background-image: url('../img/SVG/Recurso9.svg');
     background-repeat: no-repeat;
-    background-size: 42.5%;
+    background-size: contain;
     background-position: left center;
 
     .line {
@@ -23,4 +25,31 @@
         background-image: none;
     }
 
+    @include medium-screen {
+        background-size: 40%;
+    }
+
+}
+
+.valores {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(100px, auto));
+    gap: 1rem;
+    color: $primary-color;
+    padding: 1rem 0px;
+    width: 100%;
+
+    div {
+    box-shadow: $shadow;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: #fff;
+}
+
+    @include small-screen {
+        grid-template-columns: repeat(2, minmax(80px, auto));
+    }
 }
