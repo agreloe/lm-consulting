@@ -8,7 +8,7 @@ export default function How() {
         setSelectedRow(index);
         setOpen(true)
         if(selectedRow === index) {
-            setOpen(false)
+            setOpen(!open)
         }
     };
     const items = [

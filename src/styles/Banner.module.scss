@@ -10,9 +10,12 @@
     align-items: center;
     margin-top: $navHeight;
 
+    .button {
+        @include button($primary-color);
+    }
+
     @include small-screen {
         background-image: url('../img/SVG/BannerImgMobile.svg');
-        min-height: 500px;
         background-size: cover;
         background-position: 50%;
     }
