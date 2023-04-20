@@ -11,12 +11,9 @@
 :root {
   @include body($paragraph);
   scroll-padding-top: 5rem;
-
-}
-
-body {
   scroll-behavior: smooth !important;
 }
+
 
 *,
 *::before,
@@ -24,7 +21,7 @@ body {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    //overflow-x: hidden;
     //overscroll-behavior: none;
 
 }
