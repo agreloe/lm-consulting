@@ -16,7 +16,7 @@ export default function Contact() {
         <div className="flex flex-col w-full lg:w-[50%] xl:w-[50%]">
             <h2 className='pb-16 sm:pb-8'>Contactános</h2>
             <span className={`${styles.line} mb-16 sm:mb-8`}></span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam asperiores repudiandae ducimus, sunt iusto nostrum dolor maxime labore velit quidem, nam excepturi eveniet ab iste? Architecto deserunt rem iusto obcaecati!</p>
+            <p>¿Tienes preguntas o comentarios? ¿Necesitas más información sobre nuestros servicios? No dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte. Puedes llenar el formulario de contacto a continuación y te responderemos en breve. Estamos disponibles para atender tus consultas y brindarte el mejor servicio posible.</p>
             <ul className={`${styles.socials}`}>
                 <li>
                     <a href="#">
