@@ -2,7 +2,7 @@
 
 .servicios {
     margin-top: $navHeight;
-    min-height: 600px;
+    min-height: 400px;
     background-image: url('../img/SVG/LMConsultingServices.svg');
     background-position: right center;
     background-size: contain;
@@ -33,6 +33,15 @@
         box-shadow: $shadow;
         position: relative;
 
+        .img {
+            background-image: url('https://img.icons8.com/external-edtim-outline-edtim/50/b6d6a9/external-headhunting-hr-edtim-outline-edtim-3.png');
+            width: 50px;
+            height: 50px;
+            background-position: 50%;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
         .title {
             width: 100%;
             display: flex;
@@ -40,6 +49,8 @@
             justify-content: space-between;
             padding: 0px 1rem;
             cursor: pointer;
+
+
 
             &::after {
                 content: '\276F';
@@ -75,6 +86,14 @@
             ul {
                 list-style-type: circle;
                 list-style-position: inside;
+            }
+
+            p {
+                padding-top: 1rem;
+            }
+
+            h5 {
+                padding-top: 1rem;
             }
 
             &.active {

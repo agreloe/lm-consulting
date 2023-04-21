@@ -22,7 +22,7 @@ export default function Services() {
             'url': '/servicios#asesoria'
         },
         {
-            'title': 'Planificación de Políticas y Procesos de Recursos Humanos',
+            'title': 'Políticas y Procesos de Recursos Humanos',
             'icon': 'https://img.icons8.com/external-smashingstocks-mixed-smashing-stocks/68/b6d6a9/external-human-resources-fintech-smashingstocks-mixed-smashing-stocks.png',
             'url': '/servicios#planificacion'
         },
@@ -40,12 +40,7 @@ export default function Services() {
             'title': 'Desarrollo y retención de Talento',
             'icon': 'https://img.icons8.com/external-smashingstocks-mixed-smashing-stocks/68/b6d6a9/external-human-resources-marketing-and-business-management-smashingstocks-mixed-smashing-stocks.png',
             'url': '/servicios#retencion'
-        },
-        {
-            'title': 'Desarrollo de procesos para una Comunicación Efectiva',
-            'icon': 'https://img.icons8.com/external-smashingstocks-mixed-smashing-stocks/68/b6d6a9/external-consulting-customer-services-help-support-smashingstocks-mixed-smashing-stocks.png',
-            'url': '/servicios#desarrollo'
-        },
+        }
     ]
 
   return (
