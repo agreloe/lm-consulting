@@ -44,7 +44,7 @@ export default function Services() {
         {
             'title': 'Desarrollo de procesos para una Comunicación Efectiva',
             'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png',
-            'url': '/'
+            'url': '/servicios#desarrollo'
         },
     ]
 

@@ -113,7 +113,7 @@ export default function Servicios() {
           </div>
 
           <div id='planificacion' className={`p-8 rounded-[10px] bg-[#FDFEFF] ${styles.box}`}>
-            <h4 className={`${styles.title} ${open && selectedRow === 4 ? `${styles.rotate}` : ``}`} onClick={() => onSelectedRow(4)}>Planificación e Implementación de Políticas y Procesos de Recursos Humanos</h4>
+            <h4 className={`${styles.title} ${open && selectedRow === 4 ? `${styles.rotate}` : ``}`} onClick={() => onSelectedRow(4)}>Planificación de Políticas y Procesos de Recursos Humanos</h4>
             <div id="box-content" className={`${styles["box-content"]} ${open && selectedRow === 4 ? `${styles.active}` : ``}`}>
               <h5>Construyendo puentes para grandes equipos de trabajo</h5>
               <p>La planificación, mejora e implementación de políticas y de los procesos de Recursos Humanos es esencial para garantizar que una organización cuente con el talento adecuado para lograr sus objetivos y metas. Estos procesos son vitales para el funcionamiento efectivo de cualquier empresa, ya que abarcan desde la adquisición de talento hasta el desarrollo y retención de los empleados. También implica la identificación de brechas en la fuerza laboral actual y futura de una organización y la implementación de estrategias para cerrar esas brechas. Esto puede implicar la contratación de nuevo personal, el desarrollo de los empleados existentes o la promoción interna.</p>
