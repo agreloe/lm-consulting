@@ -54,7 +54,7 @@ export default function How() {
                             <div className={open === true && selectedRow === index ? `${styles.description} ${styles.active}` : `${styles.description}`}>
                                 <p>{item.description}</p>
                             </div>
-                            <button className={`${styles.button}`} onClick={() => onSelectedRow(index)}>{open === true && selectedRow === index ? 'Mostrar menos' : 'Mostrar más'}</button>
+                            <button className={`${styles.button}`} onClick={() => onSelectedRow(index)}>{open === true && selectedRow === index ? 'Leer menos' : 'Leer más'}</button>
                         </div>
                     ))
                 }
