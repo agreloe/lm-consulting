@@ -156,7 +156,7 @@ export default function Servicios() {
 
           </div>
 
-          <div id='desarrollo' className={`py-8 px-4 rounded-[10px] bg-[#EEFAFF] ${styles.box}`}>
+          <div id='desarrollo' className={`py-8 px-4 rounded-[10px] bg-[#FDFEFF] ${styles.box}`}>
             <h4 className={`${styles.title} ${open && selectedRow === 8 ? `${styles.rotate}` : ``}`} onClick={() => onSelectedRow(8)}>Desarrollo de procesos para una Comunicación Efectiva</h4>
             <div id="box-content" className={`${styles["box-content"]} ${open && selectedRow === 8 ? `${styles.active}` : ``}`}>
               <h5>Transmite tu mensaje, alcanza tus metas: La comunicación efectiva como tu mejor herramienta</h5>

@@ -49,7 +49,7 @@ export default function Services() {
     ]
 
   return (
-    <section id='servicios' className={`wrap py-32 sm:text-center sm:pt-32 sm:pb-16 ${styles.servicios}`}>
+    <section id='servicios' className={`wrap py-32 sm:pt-32 sm:pb-16 ${styles.servicios}`}>
         <h2 className='pb-16 sm:pb-8'>Nuestros Servicios</h2>
         <span className={`${styles.line} mb-16 sm:mb-8`}></span>
         <div className={`${styles.cards}`}>
