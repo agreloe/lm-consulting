@@ -19,6 +19,7 @@
         background-image: url('../img/SVG/BannerImgMobile.svg');
         background-size: cover;
         background-position: 50%;
+        min-height: 500px;
     }
 
     @include medium-screen {
