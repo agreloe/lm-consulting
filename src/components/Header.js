@@ -47,7 +47,7 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link href={"/"} onClick={closeMenu}>Servicios</Link>
+            <Link href={"/servicios"} onClick={closeMenu}>Servicios</Link>
           </li>
           <li>
             <Link href={"/#elegirnos"} onClick={closeMenu}>¿Por qué elegirnos?</Link>

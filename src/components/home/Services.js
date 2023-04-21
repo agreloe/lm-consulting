@@ -9,37 +9,37 @@ export default function Services() {
         {
             'title': 'Búsqueda y Selección de personal ',
             'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png',
-            'url': '/'
+            'url': '/servicios#busqueda'
         },
         {
-            'title': 'Análisis y diagnóstico de Estructuras y Puestos',
+            'title': 'Análisis y Diagnóstico de Estructuras y Puestos',
             'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png',
-            'url': '/'
+            'url': '/servicios#analisis'
         },
         {
-            'title': 'Asesoría experta para la Gestión Integral de Recursos Humanos',
+            'title': 'Asesoría Experta Integral en Recursos Humanos',
             'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png',
-            'url': '/'
+            'url': '/servicios#asesoria'
         },
         {
-            'title': 'Planificación, Mejora e Implementación de políticas',
+            'title': 'Planificación de Políticas y Procesos de Recursos Humanos',
             'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png',
-            'url': '/'
+            'url': '/servicios#planificacion'
         },
         {
             'title': 'Coaching Ejecutivo y Life Coaching',
             'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png',
-            'url': '/'
+            'url': '/servicios#coaching'
         },
         {
             'title': 'Gestión del desempeño por competencias',
             'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png',
-            'url': '/'
+            'url': '/servicios#gestion'
         },
         {
             'title': 'Desarrollo y retención de Talento',
             'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png',
-            'url': '/'
+            'url': '/servicios#retencion'
         },
         {
             'title': 'Desarrollo de procesos para una Comunicación Efectiva',
@@ -55,15 +55,18 @@ export default function Services() {
         <div className={`${styles.cards}`}>
             {
                 servicios.map((item,index)=>(
+                    <Link key={index} href={item.url} className={`${styles.card} min-h-[220px] sm:min-h-[180px]`}>
 
-                    <div key={index} className={`${styles.card} min-h-[220px] sm:min-h-[180px]`}>
-                        <div className='flex gap-4 flex-col sm:flex-row'>
-                            <Image src={item.icon} width={50} height={50} alt='/' />
-                            <h5>{item.title}</h5>
-                        </div>
 
-                        <Link className={`${styles['see-more']}`} href={item.url}>Ver más</Link>
-                    </div>
+                            <div className='flex gap-4 flex-col sm:flex-row'>
+                                <Image src={item.icon} width={50} height={50} alt='/' />
+                                <h5>{item.title}</h5>
+                            </div>
+
+                            {/* <Link className={`${styles['see-more']}`} href={item.url}>Ver más</Link> */}
+
+                    </Link>
+
                 ))
             }
         </div>

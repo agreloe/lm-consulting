@@ -1,0 +1,89 @@
+@import 'Variables';
+
+.servicios {
+    margin-top: $navHeight;
+    min-height: 600px;
+    background-image: url('../img/SVG/LMConsultingServices.svg');
+    background-position: right center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+
+
+    @include small-screen {
+        background-image: url('../img/SVG/BannerImgMobile.svg');
+        background-size: cover;
+        background-position: 50%;
+        min-height: 300px;
+    }
+
+    @include medium-screen {
+        background-size: 40%;
+    }
+}
+
+.servicios-boxes {
+
+    background-color: $primary-color;
+
+    .box {
+        box-shadow: $shadow;
+        position: relative;
+
+        .title {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0px 1rem;
+
+            &::after {
+                content: '\276F';
+                font-size: 1.25rem;
+                transform-origin: 50%;
+                transform: rotate(90deg);
+                -webkit-transform: rotate(90deg);
+                -moz-transform: rotate(90deg);
+                -ms-transform: rotate(90deg);
+                -o-transform: rotate(90deg);
+                transition: $transition;
+                -webkit-transition: $transition;
+                -moz-transition: $transition;
+                -ms-transition: $transition;
+                -o-transition: $transition;
+}
+
+            &.rotate {
+                &::after {
+                    transform: rotate(-90deg);
+                    -webkit-transform: rotate(-90deg);
+                    -moz-transform: rotate(-90deg);
+                    -ms-transform: rotate(-90deg);
+                    -o-transform: rotate(-90deg);
+}
+            }
+        }
+
+        .box-content {
+            height: 0px;
+            overflow: hidden;
+            padding: 0px 1rem;
+            ul {
+                list-style-type: circle;
+                list-style-position: inside;
+            }
+
+            &.active {
+                height: auto;
+                padding-top: 1rem;
+            }
+
+        }
+
+    }
+
+}
+
