@@ -8,22 +8,22 @@ export default function Services() {
     const servicios = [
         {
             'title': 'Búsqueda y Selección de personal ',
-            'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png',
+            'icon': 'https://img.icons8.com/external-edtim-outline-edtim/50/b6d6a9/external-headhunting-hr-edtim-outline-edtim-3.png',
             'url': '/servicios#busqueda'
         },
         {
             'title': 'Análisis y Diagnóstico de Estructuras y Puestos',
-            'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png',
+            'icon': 'https://img.icons8.com/external-outline-geotatah/64/b6d6a9/external-employment-recruitment-outline-geotatah-2.png',
             'url': '/servicios#analisis'
         },
         {
             'title': 'Asesoría Experta Integral en Recursos Humanos',
-            'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png',
+            'icon': 'https://img.icons8.com/external-smashingstocks-mixed-smashing-stocks/68/b6d6a9/external-consulting-business-motivation-smashingstocks-mixed-smashing-stocks.png',
             'url': '/servicios#asesoria'
         },
         {
             'title': 'Planificación de Políticas y Procesos de Recursos Humanos',
-            'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png',
+            'icon': 'https://img.icons8.com/external-smashingstocks-mixed-smashing-stocks/68/b6d6a9/external-human-resources-fintech-smashingstocks-mixed-smashing-stocks.png',
             'url': '/servicios#planificacion'
         },
         {
@@ -33,17 +33,17 @@ export default function Services() {
         },
         {
             'title': 'Gestión del desempeño por competencias',
-            'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png',
+            'icon': 'https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/b6d6a9/external-consulting-business-flatart-icons-outline-flatarticons.png',
             'url': '/servicios#gestion'
         },
         {
             'title': 'Desarrollo y retención de Talento',
-            'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png',
+            'icon': 'https://img.icons8.com/external-smashingstocks-mixed-smashing-stocks/68/b6d6a9/external-human-resources-marketing-and-business-management-smashingstocks-mixed-smashing-stocks.png',
             'url': '/servicios#retencion'
         },
         {
             'title': 'Desarrollo de procesos para una Comunicación Efectiva',
-            'icon': 'https://img.icons8.com/ios/50/b6d6a9/human-resources.png',
+            'icon': 'https://img.icons8.com/external-smashingstocks-mixed-smashing-stocks/68/b6d6a9/external-consulting-customer-services-help-support-smashingstocks-mixed-smashing-stocks.png',
             'url': '/servicios#desarrollo'
         },
     ]

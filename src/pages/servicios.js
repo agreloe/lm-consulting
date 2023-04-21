@@ -2,9 +2,6 @@ import React, { Fragment, useState } from 'react'
 import styles from '@/styles/Servicios.module.scss'
 import Head from 'next/head'
 
-
-
-
 export default function Servicios() {
   const [open, setOpen] = useState(false)
   const [selectedRow, setSelectedRow] = useState(undefined);
@@ -47,18 +44,11 @@ export default function Servicios() {
       <section className={`${styles.servicios}`}>
         <div className="wrap sm:text-center flex flex-col gap-4 sm:items-center">
           <h1 className='xl:w-[60%] lg:w-[50%] md:w-[68%] w-full'>Nuestros servicios</h1>
-
-
         </div>
 
       </section>
       <section className={`py-16 ${styles['servicios-boxes']}`}>
-
-
-
         <div className="wrap flex gap-4 flex-col">
-
-
 
           <div id='busqueda' className={`py-8 px-4 rounded-[10px] bg-[#EEFAFF] ${styles.box}`}>
             <h4 className={`${styles.title} ${open && selectedRow === 1 ? `${styles.rotate}` : ``}`} onClick={() => onSelectedRow(1)}>Búsqueda y Selección de personal</h4>
