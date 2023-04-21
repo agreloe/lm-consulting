@@ -29,10 +29,10 @@ $paragraph: 1rem;
     line-height: 4rem;
 }
 
-@mixin body($size) {
+@mixin body($size, $weight, $color) {
     font-family: $secondary-font;
-    color: $text-color;
-    font-weight: 300;
+    color: $color;
+    font-weight: $weight;
     font-size: $size;
 }
 

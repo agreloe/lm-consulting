@@ -9,7 +9,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 
 :root {
-  @include body($paragraph);
+  @include body($paragraph, 300, $text-color);
   scroll-padding-top: 5rem;
   scroll-behavior: smooth !important;
 }
@@ -58,15 +58,11 @@ h3 {
 }
 
 h4 {
-  @include body($paragraph);
-  font-size: $header4;
-  color: $primary-color;
+  @include body($header4, 600, $primary-color);
 }
 
 h5 {
-  @include body($paragraph);
-  font-size: $header5;
-  color: $primary-color;
+  @include body($header5, 600, $primary-color);
 }
 
 h1,

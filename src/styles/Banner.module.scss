@@ -12,6 +12,7 @@
 
     .button {
         @include button($primary-color);
+        margin-top: 1rem;
     }
 
     @include small-screen {
