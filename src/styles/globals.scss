@@ -58,11 +58,15 @@ h3 {
 }
 
 h4 {
-  @include title($header4, 4px);
+  @include body($paragraph);
+  font-size: $header4;
+  color: $primary-color;
 }
 
 h5 {
-  @include title($header5, 3px)
+  @include body($paragraph);
+  font-size: $header5;
+  color: $primary-color;
 }
 
 h1,
@@ -107,6 +111,12 @@ a {
 }
 
 @include small-screen {
+  h1,
+  h2,
+  h3 {
+    line-height: 2.5rem;
+  }
+
   h1 {
     font-size: $header3;
   }
@@ -118,6 +128,7 @@ a {
   }
   h4 {
     font-size: $header5;
+    line-height: 2rem;
   }
   h5 {
     font-size: $paragraph;

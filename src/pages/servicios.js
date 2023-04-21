@@ -60,7 +60,7 @@ export default function Servicios() {
 
 
 
-          <div id='busqueda' className={`p-8 rounded-[10px] bg-[#EEFAFF] ${styles.box}`}>
+          <div id='busqueda' className={`py-8 px-4 rounded-[10px] bg-[#EEFAFF] ${styles.box}`}>
             <h4 className={`${styles.title} ${open && selectedRow === 1 ? `${styles.rotate}` : ``}`} onClick={() => onSelectedRow(1)}>Búsqueda y Selección de personal</h4>
             <div id='box-content' className={`${styles["box-content"]} ${open && selectedRow === 1 ? `${styles.active}` : ``}`}>
               <h5>Conectamos talento y oportunidades</h5>
@@ -82,7 +82,7 @@ export default function Servicios() {
             </div>
           </div>
 
-          <div id='analisis' className={`p-8 rounded-[10px] bg-[#FDFEFF] ${styles.box}`}>
+          <div id='analisis' className={`py-8 px-4 rounded-[10px] bg-[#FDFEFF] ${styles.box}`}>
             <h4 className={`${styles.title} ${open && selectedRow === 2 ? `${styles.rotate}` : ``}`} onClick={() => onSelectedRow(2)}>Análisis y diagnóstico de Estructuras y Puestos</h4>
             <div id="box-content" className={`${styles["box-content"]} ${open && selectedRow === 2 ? `${styles.active}` : ``}`}>
               <h5>Optimiza tu potencial encontrando tu equilibrio organizacional con diagnósticos precisos y soluciones efectivas</h5>
@@ -101,7 +101,7 @@ export default function Servicios() {
             </div>
           </div>
 
-          <div id='asesoria' className={`p-8 rounded-[10px] bg-[#EEFAFF] ${styles.box}`}>
+          <div id='asesoria' className={`py-8 px-4 rounded-[10px] bg-[#EEFAFF] ${styles.box}`}>
             <h4 className={`${styles.title} ${open && selectedRow === 3 ? `${styles.rotate}` : ``}`} onClick={() => onSelectedRow(3)}>Asesoría Experta Integral en Recursos Humanos</h4>
             <div id="box-content" className={`${styles["box-content"]} ${open && selectedRow === 3 ? `${styles.active}` : ``}`}>
               <h5>Personas comprometidas, empresas exitosas</h5>
@@ -112,7 +112,7 @@ export default function Servicios() {
 
           </div>
 
-          <div id='planificacion' className={`p-8 rounded-[10px] bg-[#FDFEFF] ${styles.box}`}>
+          <div id='planificacion' className={`py-8 px-4 rounded-[10px] bg-[#FDFEFF] ${styles.box}`}>
             <h4 className={`${styles.title} ${open && selectedRow === 4 ? `${styles.rotate}` : ``}`} onClick={() => onSelectedRow(4)}>Planificación de Políticas y Procesos de Recursos Humanos</h4>
             <div id="box-content" className={`${styles["box-content"]} ${open && selectedRow === 4 ? `${styles.active}` : ``}`}>
               <h5>Construyendo puentes para grandes equipos de trabajo</h5>
@@ -121,7 +121,7 @@ export default function Servicios() {
             </div>
           </div>
 
-          <div id='coaching' className={`p-8 rounded-[10px] bg-[#EEFAFF] ${styles.box}`}>
+          <div id='coaching' className={`py-8 px-4 rounded-[10px] bg-[#EEFAFF] ${styles.box}`}>
             <h4 className={`${styles.title} ${open && selectedRow === 5 ? `${styles.rotate}` : ``}`} onClick={() => onSelectedRow(5)}>Coaching Ejecutivo y Life Coaching</h4>
             <div id="box-content" className={`${styles["box-content"]} ${open && selectedRow === 5 ? `${styles.active}` : ``}`}>
               <h5>Avanza con confianza y alcanza tus metas. Superá tus desafíos y maximiza tu éxito</h5>
@@ -132,7 +132,7 @@ export default function Servicios() {
             </div>
           </div>
 
-          <div id='gestion' className={`p-8 rounded-[10px] bg-[#FDFEFF] ${styles.box}`}>
+          <div id='gestion' className={`py-8 px-4 rounded-[10px] bg-[#FDFEFF] ${styles.box}`}>
             <h4 className={`${styles.title} ${open && selectedRow === 6 ? `${styles.rotate}` : ``}`} onClick={() => onSelectedRow(6)}>Gestión del desempeño por competencias</h4>
             <div id="box-content" className={`${styles["box-content"]} ${open && selectedRow === 6 ? `${styles.active}` : ``}`}>
               <h5>Potencia tus talentos como camino hacia el éxito.</h5>
@@ -143,7 +143,7 @@ export default function Servicios() {
 
           </div>
 
-          <div id='retencion' className={`p-8 rounded-[10px] bg-[#EEFAFF] ${styles.box}`}>
+          <div id='retencion' className={`py-8 px-4 rounded-[10px] bg-[#EEFAFF] ${styles.box}`}>
             <h4 className={`${styles.title} ${open && selectedRow === 7 ? `${styles.rotate}` : ``}`} onClick={() => onSelectedRow(7)}>Desarrollo y retención de Talento</h4>
             <div id="box-content" className={`${styles["box-content"]} ${open && selectedRow === 7 ? `${styles.active}` : ``}`}>
               <h5>Nuestro enfoque en el desarrollo y retención del talento. Tu ventaja competitiva</h5>
@@ -156,7 +156,7 @@ export default function Servicios() {
 
           </div>
 
-          <div id='desarrollo' className={`p-8 rounded-[10px] bg-[#EEFAFF] ${styles.box}`}>
+          <div id='desarrollo' className={`py-8 px-4 rounded-[10px] bg-[#EEFAFF] ${styles.box}`}>
             <h4 className={`${styles.title} ${open && selectedRow === 8 ? `${styles.rotate}` : ``}`} onClick={() => onSelectedRow(8)}>Desarrollo de procesos para una Comunicación Efectiva</h4>
             <div id="box-content" className={`${styles["box-content"]} ${open && selectedRow === 8 ? `${styles.active}` : ``}`}>
               <h5>Transmite tu mensaje, alcanza tus metas: La comunicación efectiva como tu mejor herramienta</h5>

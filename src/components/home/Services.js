@@ -60,7 +60,7 @@ export default function Services() {
 
                             <div className='flex gap-4 flex-col sm:flex-row'>
                                 <Image src={item.icon} width={50} height={50} alt='/' />
-                                <h5>{item.title}</h5>
+                                <h4>{item.title}</h4>
                             </div>
 
                             {/* <Link className={`${styles['see-more']}`} href={item.url}>Ver más</Link> */}

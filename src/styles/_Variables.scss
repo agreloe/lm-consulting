@@ -26,6 +26,7 @@ $paragraph: 1rem;
     font-size: $size;
     letter-spacing: $spacing;
     text-transform: uppercase;
+    line-height: 4rem;
 }
 
 @mixin body($size) {
