@@ -3,6 +3,7 @@ import styles from '@/styles/Contact.module.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
+import Link from 'next/link';
 
 
 export default function Contact() {
@@ -19,19 +20,19 @@ export default function Contact() {
             <p>¿Tienes preguntas o comentarios? ¿Necesitas más información sobre nuestros servicios? No dudes en ponerte en contacto con nosotros. Estamos aquí para ayudarte. Puedes llenar el formulario de contacto a continuación y te responderemos en breve. Estamos disponibles para atender tus consultas y brindarte el mejor servicio posible.</p>
             <ul className={`${styles.socials}`}>
                 <li>
-                    <a href="#">
+                    <Link href="https://www.linkedin.com/company/lmconsulting-rh/" target='_blank' rel='noopener noreferrer'>
                         <FontAwesomeIcon icon={faLinkedinIn} />
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="#">
+                    <Link href="#" target='_blank' rel='noopener noreferrer'>
                         <FontAwesomeIcon icon={faWhatsapp} />
-                    </a>
+                    </Link>
                 </li>
                 <li>
-                    <a href="#">
+                    <Link href="mailto:hola@lmconsulting-rh.com" target='_blank' rel='noopener noreferrer'>
                         <FontAwesomeIcon icon={faEnvelope} />
-                    </a>
+                    </Link>
                 </li>
             </ul>
         </div>
