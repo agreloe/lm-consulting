@@ -17,8 +17,8 @@ export default function Contact() {
         <div className="flex flex-col w-full lg:w-[50%] xl:w-[50%]">
             <h2 className='pb-16 sm:pb-8'>Contactános</h2>
             <span className={`${styles.line} mb-16 sm:mb-8`}></span>
-            <p>Gracias por querer contactarte con nosotros. ¿Necesitas más información sobre nuestros servicios? Escribinos y a la brevedad te vamos a contactar  por el medio que nos indiques. Te sugerimos completar el formulario y al contactarnos podemos agendar una reunión para conocernos.</p>
-            <p>Estamos a tu disposición para brindarte el mejor servicio que se ajuste a tus necesidades.</p>
+            <p>Gracias por contactarte con nosotros. ¿Necesitas más información sobre nuestros servicios? Escribinos y a la brevedad te conectamos  por el medio que nos hayas indicado. , y si estás de acuerdo,  podemos agendar una reunión para conocernos mejor.</p>
+            <h5>Estamos a tu disposición para brindarte el mejor servicio que se ajuste a tus necesidades.</h5>
             <ul className={`${styles.socials}`}>
                 <li>
                     <Link href="https://www.linkedin.com/company/lmconsulting-rh/" target='_blank' rel='noopener noreferrer'>
