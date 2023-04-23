@@ -32,6 +32,14 @@
     .box {
         box-shadow: $shadow;
         position: relative;
+        width: 49%;
+        /* height: fit-content;
+        min-height: 140px; */
+
+        .button {
+            @include button($primary-color);
+            margin-top: 1rem;
+        }
 
         img {
             object-fit: contain;
@@ -43,11 +51,11 @@
             align-items: center;
             justify-content: space-between;
             padding: 0px 1rem;
-            cursor: pointer;
+            //cursor: pointer;
 
 
 
-            &::after {
+            /* &::after {
                 content: '\276F';
                 font-size: 1.25rem;
                 transform-origin: 50%;
@@ -61,7 +69,7 @@
                 -moz-transition: $transition;
                 -ms-transition: $transition;
                 -o-transition: $transition;
-}
+            }
 
             &.rotate {
                 &::after {
@@ -70,32 +78,73 @@
                     -moz-transform: rotate(-90deg);
                     -ms-transform: rotate(-90deg);
                     -o-transform: rotate(-90deg);
-}
-            }
+                }
+            } */
         }
 
         .box-content {
-            height: 0px;
+            height: 175px;
             overflow: hidden;
             padding: 0px 1rem;
+
             ul {
                 list-style-type: circle;
                 list-style-position: inside;
             }
 
-            p {
+            /* p {
                 padding-top: 1rem;
-            }
+            } */
 
             h5 {
                 padding-top: 1rem;
             }
 
+            p {
+                padding-top: 1rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 3;
+                line-clamp: 3;
+
+            }
+
             &.active {
                 height: auto;
                 padding-top: 1rem;
+
+
+                p {
+
+                    overflow:unset;
+                    text-overflow:unset;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: unset;
+                    line-clamp: unset;
+
+                }
             }
 
+            /* &.active {
+                height: auto;
+                padding-top: 1rem;
+            } */
+
+        }
+
+        @include small-screen {
+            width: 100%;
+
+            .box-content {
+                height: 170px;
+            }
+        }
+
+        @include medium-screen {
+            width: 48%;
         }
 
     }

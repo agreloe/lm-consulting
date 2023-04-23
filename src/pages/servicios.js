@@ -49,12 +49,12 @@ export default function Servicios() {
 
       </section>
       <section className={`py-16 ${styles['servicios-boxes']}`}>
-        <div className="wrap flex gap-4 flex-col">
+        <div className="wrap flex gap-4 flex-wrap md:justify-center">
 
           <div id='busqueda' className={`py-8 px-4 rounded-[10px] bg-[#EEFAFF] ${styles.box}`}>
             <div className='flex'>
               <Image src="https://img.icons8.com/external-edtim-outline-edtim/50/b6d6a9/external-headhunting-hr-edtim-outline-edtim-3.png" alt='icono de servicio' width={50} height={50} />
-              <h4 className={`${styles.title} ${open && selectedRow === 1 ? `${styles.rotate}` : ``}`} onClick={() => onSelectedRow(1)}>Búsqueda y Selección</h4>
+              <h4 className={`${styles.title} ${open && selectedRow === 1 ? `${styles.rotate}` : ``}`}>Búsqueda y Selección</h4>
             </div>
             <div id='box-content' className={`${styles["box-content"]} ${open && selectedRow === 1 ? `${styles.active}` : ``}`}>
               <h5>Conectamos talentos y oportunidades</h5>
@@ -73,13 +73,16 @@ export default function Servicios() {
                 <li>Buscamos los perfiles necesarios sin límites geográficos</li>
               </ul>
             </div>
+            <div className="flex px-4 justify-end">
+              <button className={`${styles.button}`} onClick={() => onSelectedRow(1)}>{open === true && selectedRow === 1 ? 'Leer menos' : 'Leer más'}</button>
+            </div>
           </div>
 
           <div id='analisis' className={`py-8 px-4 rounded-[10px] bg-[#FDFEFF] ${styles.box}`}>
             <div className="flex">
               <Image width={50} height={50} alt='icono de servicio' src='https://img.icons8.com/external-outline-geotatah/64/b6d6a9/external-employment-recruitment-outline-geotatah-2.png' />
 
-              <h4 className={`${styles.title} ${open && selectedRow === 2 ? `${styles.rotate}` : ``}`} onClick={() => onSelectedRow(2)}>Análisis y diagnóstico de Estructuras y Puestos</h4>
+              <h4 className={`${styles.title} ${open && selectedRow === 2 ? `${styles.rotate}` : ``}`}>Análisis y diagnóstico de Estructuras y Puestos</h4>
             </div>
             <div id="box-content" className={`${styles["box-content"]} ${open && selectedRow === 2 ? `${styles.active}` : ``}`}>
               <h5>Optimiza tu potencial encontrando tu equilibrio organizacional</h5>
@@ -98,12 +101,15 @@ export default function Servicios() {
               </ul>
 
             </div>
+            <div className="flex px-4 justify-end">
+              <button className={`${styles.button}`} onClick={() => onSelectedRow(2)}>{open === true && selectedRow === 2 ? 'Leer menos' : 'Leer más'}</button>
+            </div>
           </div>
 
           <div id='asesoria' className={`py-8 px-4 rounded-[10px] bg-[#EEFAFF] ${styles.box}`}>
             <div className="flex">
               <Image width={50} height={50} alt='icono de servicio' src='https://img.icons8.com/external-smashingstocks-mixed-smashing-stocks/68/b6d6a9/external-consulting-business-motivation-smashingstocks-mixed-smashing-stocks.png' />
-              <h4 className={`${styles.title} ${open && selectedRow === 3 ? `${styles.rotate}` : ``}`} onClick={() => onSelectedRow(3)}>Asesoría Experta Integral en Recursos Humanos</h4>
+              <h4 className={`${styles.title} ${open && selectedRow === 3 ? `${styles.rotate}` : ``}`}>Asesoría Experta Integral en Recursos Humanos</h4>
             </div>
             <div id="box-content" className={`${styles["box-content"]} ${open && selectedRow === 3 ? `${styles.active}` : ``}`}>
               <h5>Personas comprometidas, empresas exitosas</h5>
@@ -119,13 +125,17 @@ export default function Servicios() {
               </ul>
             </div>
 
+            <div className="flex px-4 justify-end">
+              <button className={`${styles.button}`} onClick={() => onSelectedRow(3)}>{open === true && selectedRow === 3 ? 'Leer menos' : 'Leer más'}</button>
+            </div>
+
           </div>
 
           <div id='planificacion' className={`py-8 px-4 rounded-[10px] bg-[#FDFEFF] ${styles.box}`}>
             <div className="flex">
 
               <Image width={50} height={50} alt='icono de servicio' src='https://img.icons8.com/external-smashingstocks-mixed-smashing-stocks/68/b6d6a9/external-human-resources-fintech-smashingstocks-mixed-smashing-stocks.png' />
-              <h4 className={`${styles.title} ${open && selectedRow === 4 ? `${styles.rotate}` : ``}`} onClick={() => onSelectedRow(4)}>Políticas y Procesos de Recursos Humanos</h4>
+              <h4 className={`${styles.title} ${open && selectedRow === 4 ? `${styles.rotate}` : ``}`}>Políticas y Procesos de Recursos Humanos</h4>
             </div>
             <div id="box-content" className={`${styles["box-content"]} ${open && selectedRow === 4 ? `${styles.active}` : ``}`}>
               <h5>Construyendo puentes para grandes equipos de trabajo</h5>
@@ -139,13 +149,16 @@ export default function Servicios() {
                 <li>Identificar las problemáticas existentes en las áreas de recursos humanos nos permite revisar los procesos y sus políticas de cada una de ellas. Es allí cuando se logra resolver, implementando diferentes planes de acción, las complicaciones que se consideraban normales y habituales.</li>
               </ul>
             </div>
+            <div className="flex px-4 justify-end">
+              <button className={`${styles.button}`} onClick={() => onSelectedRow(4)}>{open === true && selectedRow === 4 ? 'Leer menos' : 'Leer más'}</button>
+            </div>
           </div>
 
           <div id='coaching' className={`py-8 px-4 rounded-[10px] bg-[#EEFAFF] ${styles.box}`}>
             <div className="flex">
 
               <Image width={50} height={50} alt='icono de servicio' src='https://img.icons8.com/ios/50/b6d6a9/human-resources.png' />
-              <h4 className={`${styles.title} ${open && selectedRow === 5 ? `${styles.rotate}` : ``}`} onClick={() => onSelectedRow(5)}>Coaching Ejecutivo & Life Coaching</h4>
+              <h4 className={`${styles.title} ${open && selectedRow === 5 ? `${styles.rotate}` : ``}`}>Coaching Ejecutivo & Life Coaching</h4>
 
             </div>
             <div id="box-content" className={`${styles["box-content"]} ${open && selectedRow === 5 ? `${styles.active}` : ``}`}>
@@ -154,13 +167,16 @@ export default function Servicios() {
               <p>El coaching ejecutivo se centra en el desarrollo de habilidades y competencias de liderazgo en el entorno empresarial, trabaja con los clientes en áreas como la toma de decisiones, la gestión del tiempo, la comunicación efectiva, el desarrollo de habilidades de liderazgo, la gestión del cambio y la resolución de conflictos. El coaching de vida se enfoca en ayudar a las personas a alcanzar sus metas y mejorar su bienestar en diferentes áreas de sus vidas, como relaciones interpersonales, desarrollo personal, equilibrio trabajo-vida, bienestar, entre otros.</p>
               <p>En LM Consulting brindamos sesiones 1:1 de acompañamiento con quiénes necesiten trabajar temas específicos. Estas sesiones son llevadas adelante por profesionales certificados por la ICF (International Coach Federation) como Programa ACTP (Accredited coach training program). En este proceso es fundamental la responsabilidad y el compromiso de quien desea este acompañamiento, para poder así encontrar la respuesta a las preguntas que va a escuchar y lograr así llevarse acciones para trabajar.</p>
             </div>
+            <div className="flex px-4 justify-end">
+              <button className={`${styles.button}`} onClick={() => onSelectedRow(5)}>{open === true && selectedRow === 5 ? 'Leer menos' : 'Leer más'}</button>
+            </div>
           </div>
 
           <div id='gestion' className={`py-8 px-4 rounded-[10px] bg-[#FDFEFF] ${styles.box}`}>
             <div className="flex">
 
             <Image width={50} height={50} alt='icono de servicio' src='https://img.icons8.com/external-flatart-icons-outline-flatarticons/64/b6d6a9/external-consulting-business-flatart-icons-outline-flatarticons.png' />
-            <h4 className={`${styles.title} ${open && selectedRow === 6 ? `${styles.rotate}` : ``}`} onClick={() => onSelectedRow(6)}>Gestión del Desempeño</h4>
+            <h4 className={`${styles.title} ${open && selectedRow === 6 ? `${styles.rotate}` : ``}`}>Gestión del Desempeño</h4>
             </div>
             <div id="box-content" className={`${styles["box-content"]} ${open && selectedRow === 6 ? `${styles.active}` : ``}`}>
               <h5>Potencia tus talentos como camino hacia el éxito.</h5>
@@ -168,13 +184,16 @@ export default function Servicios() {
               <p>Este tipo de gestión aporta un gran valor y es que se centra en el desarrollo y mejora continua de los empleados, en lugar de simplemente evaluar su desempeño pasado. Al identificar y evaluar las competencias necesarias para el éxito en un puesto de trabajo específico, se pueden identificar las áreas de mejora de cada empleado y se pueden diseñar planes de desarrollo personalizados para cerrar esas brechas. Esto contribuye a la retención de talento, el aumento de la satisfacción y motivación de los empleados, y el mejoramiento del desempeño general de la organización.</p>
               <p>Otro aspecto importante de la gestión del desempeño por competencias es la retroalimentación continua y constructiva que se proporciona a los empleados. A través de la retroalimentación regular y específica sobre su desempeño en relación con las competencias, los empleados pueden tener una clara comprensión de sus fortalezas y áreas de mejora, lo que les permite ajustar su enfoque y mejorar su desempeño. Esto contribuye al desarrollo profesional de los empleados y a la construcción de una cultura de aprendizaje en la organización.</p>
             </div>
+            <div className="flex px-4 justify-end">
+              <button className={`${styles.button}`} onClick={() => onSelectedRow(6)}>{open === true && selectedRow === 6 ? 'Leer menos' : 'Leer más'}</button>
+            </div>
 
           </div>
 
           <div id='retencion' className={`py-8 px-4 rounded-[10px] bg-[#EEFAFF] ${styles.box}`}>
             <div className="flex">
             <Image width={50} height={50} alt='icono de servicio' src='https://img.icons8.com/external-smashingstocks-mixed-smashing-stocks/68/b6d6a9/external-human-resources-marketing-and-business-management-smashingstocks-mixed-smashing-stocks.png' />
-            <h4 className={`${styles.title} ${open && selectedRow === 7 ? `${styles.rotate}` : ``}`} onClick={() => onSelectedRow(7)}>Desarrollo y retención de Talento</h4>
+            <h4 className={`${styles.title} ${open && selectedRow === 7 ? `${styles.rotate}` : ``}`}>Desarrollo y retención de Talento</h4>
             </div>
             <div id="box-content" className={`${styles["box-content"]} ${open && selectedRow === 7 ? `${styles.active}` : ``}`}>
               <h5>Nuestro enfoque en el desarrollo y retención del talento. Tu ventaja competitiva</h5>
@@ -189,6 +208,10 @@ export default function Servicios() {
                 <li>Brindamos herramientas para una mayor satisfacción y compromiso por parte de los empleados que ya forman parte de la empresa, logrando un mejor desempeño en el trabajo y su retención.</li>
               </ul>
               <p>LM Consulting brinda las mejores prácticas para el desarrollo y retención de talento. Es importante tener presente que el desarrollo del talento comienza con un proceso de reclutamiento efectivo para atraer a los candidatos adecuados.</p>
+            </div>
+
+            <div className="flex px-4 justify-end">
+              <button className={`${styles.button}`} onClick={() => onSelectedRow(7)}>{open === true && selectedRow === 7 ? 'Leer menos' : 'Leer más'}</button>
             </div>
 
           </div>
