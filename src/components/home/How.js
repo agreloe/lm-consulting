@@ -13,28 +13,28 @@ export default function How() {
     };
     const items = [
         {
-            'title':'Somos un equipo de profesionales expertos',
-            'description':'Con amplia experiencia y trayectoria en el campo de la gestión de recursos humanos. Somos profesionales con amplios conocimientos y experiencias en áreas como la contratación, la gestión del talento, la administración de nóminas, la capacitación y desarrollo de empleados, la gestión del desempeño y más. Al elegir una consultora de recursos humanos, las empresas mejorar sus prácticas y políticas de recursos humanos.',
+            'title':'Somos un equipo de profesionales expertos.',
+            'description':'Contamos con amplia experiencia, conocimientos y trayectoria en nuestro ámbito laboral. Elegir una consultora de recursos humanos facilita a las empresas a mejorar sus prácticas y políticas de Recursos Humanos.',
         },
         {
-            'title':'Ahorro de tiempo y recursos',
-            'description':'La gestión de recursos humanos puede ser compleja y consumir mucho tiempo y recursos. Al externalizar ciertas funciones de recursos humanos a una consultora, las empresas pueden ahorrar tiempo y recursos internos. Esto permite a los equipos internos de recursos humanos enfocarse en actividades estratégicas y de valor agregado, mientras que las tareas más operativas y administrativas son manejadas por la consultora. Además, las consultoras de recursos humanos suelen tener acceso a tecnologías y herramientas especializadas que pueden ayudar a optimizar los procesos de recursos humanos y mejorar su eficiencia.',
+            'title':'Facilitamos el ahorro del tiempo y de recursos',
+            'description':'Obtener una asesoría en ciertas funciones permite a los equipos internos de recursos humanos enfocarse en actividades estratégicas y de valor agregado, mientras que otras tareas pueden ser manejadas por la consultora. Además, proveemos diferentes herramientas especializadas que pueden ayudar a optimizar los procesos de recursos humanos, mejorar su eficiencia y aumentar la rentabilidad de las organizaciones.',
         },
         {
-            'title':'Flexibilidad y adaptabilidad',
-            'description':'Las consultoras de recursos humanos ofrecen flexibilidad y adaptabilidad a las empresas. Pueden adaptarse a las necesidades cambiantes de la empresa y proporcionar soluciones a medida según sus requisitos específicos. Ya sea que una empresa necesite apoyo temporal para un proyecto específico, o una solución a largo plazo para el desarrollo de su departamento de recursos humanos, una consultora puede proporcionar servicios flexibles que se ajusten a las necesidades de la empresa en diferentes momentos.',
+            'title':'Ofrecemos flexibilidad y adaptabilidad.',
+            'description':'Nos adaptamos a las necesidades fluctuantes de la empresa y proporcionamos soluciones a medida según sus requisitos específicos. Ya sea la necesidad de un apoyo temporal para un proyecto específico o una solución a largo plazo para el desarrollo de su departamento de recursos humanos. Proporcionamos servicios flexibles que se ajusten a las necesidades de la empresa en diferentes momentos.',
         },
         {
-            'title':'Conocimiento actualizado de las mejores prácticas del mercado',
-            'description':'Las consultoras de recursos humanos se mantienen actualizadas con las últimas tendencias y mejores prácticas del mercado en el campo de la gestión de recursos humanos. Esto puede ser valioso para las empresas, ya que les permite estar al tanto de las últimas tendencias en el ámbito laboral, las regulaciones gubernamentales y las prácticas de gestión del talento. Una consultora puede asesorar a la empresa sobre cómo implementar prácticas innovadoras y cumplir con las regulaciones laborales vigentes, lo que puede ayudar a mantener a la empresa en línea con las mejores prácticas del mercado y a ser más competitiva.',
+            'title':'Conocimiento actualizado de las mejores prácticas del mercado.',
+            'description':'Nos mantenemos actualizados como asesoría experta integral en las últimas tendencias y prácticas para la gestión de recursos humanos. Esto puede ser valioso para las empresas, ya que les permite estar al tanto de las últimas tendencias en el ámbito laboral y las prácticas de gestión del talento. Asesoramos a las empresas sobre cómo implementar prácticas innovadoras a los efectos de poder ayudarlas a ser más competitivas.',
         },
         {
-            'title':'Solución de problemas y toma de decisiones informada',
-            'description':'Las consultoras de recursos humanos pueden ayudar a las empresas a solucionar problemas y tomar decisiones informadas en relación con los recursos humanos. Ya sea que se trate de conflictos laborales, cuestiones de compensación y beneficios, o desafíos en la gestión del talento, una consultora puede brindar orientación y asesoramiento basado en su experiencia y conocimientos. Esto puede ayudar a las empresas a abordar problemas de manera efectiva y tomar decisiones informadas que sean beneficiosas para la empresa y sus empleados.',
+            'title':'Acompañamos a las empresas en la toma de decisiones y abordaje de posibles dificultades.',
+            'description':'Lo hacemos basándonos en nuestra experiencia y conocimientos de manera efectiva y que resulten beneficiosas para las empresas y sus empleados. Estos escenarios pueden darse sobre su estructura organizacional, adquisición de nuevos talentos, conflictos laborales, contractuales, cuestiones de compensación y beneficios, desafíos en la gestión del talento entre otros posibles escenarios.',
         },
         {
-            'title':'Confidencialidad y objetividad',
-            'description':'Las consultoras de recursos humanos pueden ayudar a las empresas a solucionar problemas y tomar decisiones informadas en relación con los recursos humanos. Ya sea que se trate de conflictos laborales, cuestiones de compensación y beneficios, o desafíos en la gestión del talento, una consultora puede brindar orientación y asesoramiento basado en su experiencia y conocimientos. Esto puede ayudar a las empresas a abordar problemas de manera efectiva y tomar decisiones informadas que sean beneficiosas para la empresa y sus empleados.',
+            'title':'Trabajamos con confidencialidad y ofrecemos una mirada objetiva.',
+            'description':'La confidencialidad y el compromiso de las partes que intervienen en la relación comercial, sea cual fuere el servicio que nos vincule, es un aspecto clave a la hora del éxito en nuestro vínculo a largo plazo.',
         },
     ]
 
@@ -44,7 +44,7 @@ export default function How() {
         <div className="wrap">
             <h2 className='pb-16 sm:pb-8'>¿Por qué elegirnos?</h2>
             <span className={`${styles.line} mb-16 sm:mb-8`}></span>
-            <p>Elegir una Asesoría experta en gestión integral de recursos humanos es una decisión estratégica y beneficiosa para las empresas en muchos aspectos. Desde LM Consulting te garantizamos que optimizaremos tu negocio por varias razones, te contamos algunas a continuación:</p>
+            <p>Elegir un asesoramiento experto integral en Recursos Humanos es una decisión estratégica y beneficiosa para las empresas. Podemos afirmar que optimizaremos tu negocio porque:</p>
 
             <div className={`${styles.cards}`}>
                 {
