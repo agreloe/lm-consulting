@@ -32,7 +32,8 @@
     .box {
         box-shadow: $shadow;
         position: relative;
-        width: 49%;
+        width: 100%;
+        //width: 49%;
         /* height: fit-content;
         min-height: 140px; */
 
@@ -136,16 +137,16 @@
         }
 
         @include small-screen {
-            width: 100%;
+            //width: 100%;
 
             .box-content {
                 height: 170px;
             }
         }
 
-        @include medium-screen {
+        /* @include medium-screen {
             width: 48%;
-        }
+        } */
 
     }
 
