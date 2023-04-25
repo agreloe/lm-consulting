@@ -18,23 +18,23 @@ export default function How() {
         },
         {
             'title':'Facilitamos el ahorro del tiempo y de recursos',
-            'description':'Obtener una asesoría en ciertas funciones permite a los equipos internos de recursos humanos enfocarse en actividades estratégicas y de valor agregado, mientras que otras tareas pueden ser manejadas por la consultora. Además, proveemos diferentes herramientas especializadas que pueden ayudar a optimizar los procesos de recursos humanos, mejorar su eficiencia y aumentar la rentabilidad de las organizaciones.',
+            'description':'Obtener una asesoría experta en ciertas funciones permite a los equipos internos de recursos humanos enfocarse en actividades estratégicas y de valor agregado, mientras que otras tareas pueden ser manejadas por la consultora. Desde LM Consulting proveemos diferentes herramientas especializadas que ayudan  a optimizar los procesos de recursos humanos, mejorar su eficiencia y aumentar la rentabilidad de las organizaciones.',
         },
         {
             'title':'Ofrecemos flexibilidad y adaptabilidad.',
-            'description':'Nos adaptamos a las necesidades fluctuantes de la empresa y proporcionamos soluciones a medida según sus requisitos específicos. Ya sea la necesidad de un apoyo temporal para un proyecto específico o una solución a largo plazo para el desarrollo de su departamento de recursos humanos. Proporcionamos servicios flexibles que se ajusten a las necesidades de la empresa en diferentes momentos.',
+            'description':'Nos adaptamos a las necesidades fluctuantes de las empresas y proporcionamos soluciones a medida según sus requisitos específicos. Ya sea la necesidad de un apoyo temporal para un proyecto concreto  o una solución a largo plazo para el desarrollo de su área o departamento de recursos humanos.',
         },
         {
             'title':'Conocimiento actualizado de las mejores prácticas del mercado.',
-            'description':'Nos mantenemos actualizados como asesoría experta integral en las últimas tendencias y prácticas para la gestión de recursos humanos. Esto puede ser valioso para las empresas, ya que les permite estar al tanto de las últimas tendencias en el ámbito laboral y las prácticas de gestión del talento. Asesoramos a las empresas sobre cómo implementar prácticas innovadoras a los efectos de poder ayudarlas a ser más competitivas.',
+            'description':'Nos mantenemos actualizados como asesoría experta integral en las últimas prácticas para la gestión de recursos humanos. Esto será  valioso para las empresas, ya que les permitirá estar al tanto de las últimas tendencias en el ámbito laboral.',
         },
         {
-            'title':'Acompañamos a las empresas en la toma de decisiones y abordaje de posibles dificultades.',
-            'description':'Lo hacemos basándonos en nuestra experiencia y conocimientos de manera efectiva y que resulten beneficiosas para las empresas y sus empleados. Estos escenarios pueden darse sobre su estructura organizacional, adquisición de nuevos talentos, conflictos laborales, contractuales, cuestiones de compensación y beneficios, desafíos en la gestión del talento entre otros posibles escenarios.',
+            'title':'Acompañamiento en la toma de decisiones y abordaje de posibles dificultades.',
+            'description':'Nuestra colaboración se basa  en nuestras experiencias y conocimientos específicos  resultando beneficioso  para las empresas y sus empleados. Estos escenarios pueden darse sobre su estructura organizacional, sobre la adquisición de nuevos talentos, en conflictos laborales,, en los programas de  de compensación y beneficios, desafíos en la gestión del talento entre otros.',
         },
         {
-            'title':'Trabajamos con confidencialidad y ofrecemos una mirada objetiva.',
-            'description':'La confidencialidad y el compromiso de las partes que intervienen en la relación comercial, sea cual fuere el servicio que nos vincule, es un aspecto clave a la hora del éxito en nuestro vínculo a largo plazo.',
+            'title':'Trabajamos con confidencialidad y objetividad',
+            'description':'La confidencialidad y el compromiso de las partes que intervienen en la relación comercial, sea cual fuere el servicio que nos vincule, es un aspecto clave a la hora del éxito en nuestro vínculo a largo plazo. Consideramos fundamental dar una mirada objetiva y sincera con nuestras devoluciones luego de analizar y diagnosticar las necesidades planteadas por las organizaciones.',
         },
     ]
 

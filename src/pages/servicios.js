@@ -64,12 +64,12 @@ export default function Servicios() {
               <p>Trabajamos apasionadamente para optimizar tu negocio y el capital humano de tu empresa analizando que los perfiles que desempeñan funciones en el presente sean los más calificados para ocupar sus cargos.</p>
               <p>Nos comprometemos a ofrecer:</p>
               <ul>
-                <li>Garantía de servicio, Confidencialidad y flexibilidad.</li>
-                <li>Tiempo de calidad y dedicación para la detección del perfil correcto e indicado.</li>
+                <li>Garantía de servicio, confidencialidad y flexibilidad.</li>
+                <li>Tiempo de calidad y dedicación para la detección del perfil idóneo.</li>
                 <li>Implementación de herramientas de reclutamiento y headhunting más usadas en el mercado laboral.</li>
                 <li>Sinceridad y confianza.</li>
-                <li>Amplia base de datos de perfiles.</li>
-                <li>Encontramos los perfiles necesarios sin límites geográficos</li>
+                <li>Amplia base de datos de perfiles. Encontramos los perfiles necesarios sin límites geográficos</li>
+
               </ul>
             </div>
             <div className="flex px-4 justify-end">
@@ -87,9 +87,9 @@ export default function Servicios() {
               <h5>Optimiza tu potencial encontrando tu equilibrio organizacional</h5>
               <p>El análisis de estructuras organizacionales y sus puestos de trabajo es un proceso vital para entender cómo funciona una organización, como fue diseñada y pensada.</p>
               <p>Este análisis implica un estudio exhaustivo de las jerarquías estructurales dentro de las empresas, la distribución de sus roles y responsabilidades entre los diferentes niveles y departamentos, la definición y descripción de los puestos de trabajo puntualizando en las tareas, responsabilidades, conocimientos y habilidades, nivel de autoridad , nivel de autonomía, conocimientos técnicos específicos y relaciones de reporte, con el  objetivo principal de diagnosticar las necesidades que existen en la organización y qué recursos y herramientas se ejecutarán para cubrirlas.</p>
-              <p>El estudio detallado del organigrama de las empresas y el de sus puestos de trabajo es un aspecto clave para el continuo crecimiento de las mismas y para comprender  cómo las problemáticas de las organizaciones muchas veces se encuentran íntimamente relacionadas a su estructura organizacional.</p>
+              <p>El estudio detallado del organigrama de las empresas y el de sus puestos de trabajo para comprender  cómo las problemáticas de las organizaciones muchas veces se encuentran íntimamente relacionadas a su estructura organizacional.</p>
               <h5>¿Por qué hacerlo juntos?</h5>
-              <p>Con nuestra asesoría experta integral logramos algunos de los siguientes resultados:</p>
+              <p>Con nuestra asesoría experta integral logramos, entre otros, los siguientes resultados:</p>
               <ul>
                 <li>Potenciar la eficiencia y productividad de las empresas</li>
                 <li>Conocer en detalle las expectativas y requisitos de cada puesto de trabajo.</li>
@@ -119,8 +119,8 @@ export default function Servicios() {
                 <li>Comprender profundamente las necesidades y objetivos de las empresas.</li>
                 <li>Visibilizar y reconocer el valor estratégico del capital humano.</li>
                 <li>Brindar apoyo y orientación a las organizaciones en la administración y desarrollo de su capital humano.</li>
-                <li>Implementar herramientas y conocimientos especializados como enfoques estratégicos específicos para una gestión de Recursos Humanos competitiva y distinguida.</li>
-                <li>Resolver integralmente las diferentes dificultades que plantean las empresas en sus día a día.</li>
+                <li>Implementar herramientas y conocimientos especializados como enfoques estratégicos específicos para una gestión de Recursos Humanos competitiva.</li>
+                <li>Resolver integralmente las diferentes dificultades que plantean las empresas en el día a día.</li>
               </ul>
             </div>
 
@@ -138,14 +138,14 @@ export default function Servicios() {
             </div>
             <div id="box-content" className={`${styles["box-content"]} ${open && selectedRow === 4 ? `${styles.active}` : ``}`}>
               <h5>Construyendo puentes para grandes equipos de trabajo</h5>
-              <p>Los procesos y las políticas de recursos humanos nos permiten trabajar de manera ordenada a los efectos de alcanzar los objetivos propuestos por cada área para potenciar  así su desempeño.</p>
-              <p>Implementar políticas de recursos humanos significa contar con normas para organizar, gestionar y administrar el capital humano. De manera conjunta a esta implementación, tener un registro detallado de los procesos de gestión nos permite coordinar planes de acción y trabajar de manera controlada y coordinada. En todas las empresas seguimos procesos y estos a su vez se van convirtiendo en conocimiento importante que nos permitirá avanzar y mejorar.</p>
-              <p>Planificar y ejecutar  procesos y políticas de recursos humano ayuda a:</p>
+              <p>Los procesos y las políticas de recursos humanos nos permiten trabajar de manera ordenada a los efectos de alcanzar los objetivos propuestos por cada área y potenciar  así su desempeño.</p>
+              <p>Implementar políticas de recursos humanos significa contar con normas para organizar, gestionar y administrar el capital humano. De manera conjunta a esta ejecución , tener un registro detallado de los procesos de gestión nos permite coordinar planes de acción y trabajar de manera coordinada. En todas las empresas seguimos procesos y estos a su vez se van convirtiendo en conocimiento importante que nos permitirá avanzar y mejorar.</p>
+              <p>Planificar y ejecutar  procesos y políticas de recursos humano aporta valor:</p>
               <ul>
-                <li>Garantizar que una organización cuente con el talento adecuado para lograr sus objetivos y metas propuestas.</li>
-                <li>Identificar brechas en la fuerza laboral actual y futura en las diferentes áreas de la empresa, pudiendo implicar la contratación de nuevo personal, el desarrollo de los empleados existentes o la promoción interna.</li>
-                <li>Mejorar o revisar procesos vigentes con el fin de potenciar su funcionamiento actual.</li>
-                <li>Resolver aquellas problemáticas existentes en las diferentes áreas de recursos humanos,  consideradas normales y habituales, ajustando los procesos y sus políticas y ejecutando diferentes planes de acción para la optimización del desempeño de las áreas.</li>
+                <li>Garantizando  que una organización cuente con el talento adecuado para lograr sus objetivos y metas propuestas.</li>
+                <li>Identificando brechas en la fuerza laboral actual y futura en las diferentes áreas de la empresa, pudiendo implicar la contratación de nuevo personal, el desarrollo de los empleados existentes o la promoción interna.</li>
+                <li>Mejorando  o revisando procesos vigentes con el fin de potenciar su funcionamiento actual.</li>
+                <li>Resolviendo aquellas problemáticas existentes en las diferentes áreas de recursos humanos,  consideradas normales y habituales, ajustando los procesos y sus políticas y ejecutando diferentes planes de acción para la optimización del desempeño de las áreas.</li>
               </ul>
             </div>
             <div className="flex px-4 justify-end">
@@ -162,8 +162,8 @@ export default function Servicios() {
             </div>
             <div id="box-content" className={`${styles["box-content"]} ${open && selectedRow === 5 ? `${styles.active}` : ``}`}>
               <h5>Avanza con confianza y alcanza tus metas. Superá tus desafíos y maximizá tu éxito</h5>
-              <p>El Coaching es una práctica profesional que se basa en una relación entre un Coach y el cliente, en la cual el Coach utiliza una variedad de técnicas y herramientas para ayudar al cliente a identificar sus fortalezas y debilidades, establecer metas claras, diseñar un plan de acción y realizar un seguimiento del progreso. El coaching ejecutivo y el coaching de vida tienen como objetivo ayudar a las personas a alcanzar sus metas y mejorar su desempeño en áreas específicas de sus vidas.</p>
-              <p>El coaching ejecutivo se centra en el desarrollo de habilidades y competencias de liderazgo en el entorno empresarial, trabaja en áreas como la toma de decisiones, la gestión del tiempo, la comunicación efectiva, el desarrollo de habilidades de liderazgo, la gestión del cambio y la resolución de conflictos. Sin embargo, el coaching de vida se enfoca en ayudar a las personas a alcanzar sus metas y mejorar su bienestar en diferentes áreas de sus vidas, como relaciones interpersonales, desarrollo personal, equilibrio trabajo-vida, entre otras.</p>
+              <p>El Coaching es una práctica profesional que se basa en una relación entre dos personas, Coach y Coachee, , en la cual el Coach utiliza una variedad de técnicas y herramientas para ayudar al cliente a identificar sus fortalezas y debilidades, establecer metas claras, diseñar un plan de acción y realizar un seguimiento del progreso. El coaching ejecutivo y el coaching de vida tienen como objetivo ayudar a las personas a alcanzar sus metas y mejorar su desempeño en áreas específicas de sus vidas.</p>
+              <p>El coaching ejecutivo se centra en el desarrollo de habilidades y competencias de liderazgo en el entorno empresarial, trabaja en áreas como la toma de decisiones, la gestión del tiempo, la comunicación efectiva, el desarrollo de habilidades de liderazgo, la gestión del cambio y la resolución de conflictos. El coaching de vida se enfoca en ayudar a las personas a alcanzar sus metas y mejorar su bienestar en diferentes áreas de sus vidas, como relaciones interpersonales, desarrollo personal, equilibrio trabajo-vida, entre otras.</p>
               <p>En estos procesos es fundamental la responsabilidad y el compromiso de quien desea este acompañamiento, para poder así encontrar la respuesta a las preguntas que van a escuchar y lograr así llevarse acciones para trabajar.</p>
               <p>En LM Consulting brindamos sesiones de acompañamiento 1:1 o grupales con quiénes necesiten trabajar temas específicos. Estas sesiones son llevadas adelante por profesionales certificados por la ICF (International Coach Federation).</p>
             </div>
@@ -181,7 +181,7 @@ export default function Servicios() {
             <div id="box-content" className={`${styles["box-content"]} ${open && selectedRow === 6 ? `${styles.active}` : ``}`}>
               <h5>Potencia tus talentos como camino hacia el éxito.</h5>
               <p>La gestión del desempeño por competencias es una metodología efectiva que se utiliza para evaluar, desarrollar y potenciar las habilidades de los empleados en función de las competencias necesarias para el éxito en sus roles laborales. Estas competencias son  determinantes en el desempeño de los empleados y en el logro de los objetivos organizacionales.</p>
-              <p>En la gestión del desempeño destacamos dos aportes claves, el primero se centra en el desarrollo y mejora continua de los empleados, en lugar de simplemente evaluar su desempeño pasado. Al identificar y evaluar las competencias necesarias para el éxito en un puesto de trabajo específico, se pueden identificar las áreas de mejora de cada empleado y así diseñar planes de desarrollo personalizados para cerrar esas brechas. Esto contribuye a la retención de talento, el aumento de la satisfacción y motivación de los empleados y el mejoramiento del desempeño general de la organización. El segundo  es la retroalimentación continua y constructiva que se proporciona a los empleados. A través de la retroalimentación regular y específica sobre su desempeño en relación con las competencias, los empleados tienen  una profunda  comprensión de sus fortalezas y áreas de mejora, lo que les permite ajustar su enfoque y mejorar su desempeño. Esto contribuye al desarrollo profesional de los empleados y a la construcción de una cultura de aprendizaje en la organización.</p>
+              <p>En la gestión del desempeño destacamos dos aportes claves. El primero se centra en el desarrollo y mejora continua de los empleados, en lugar de simplemente evaluar su desempeño pasado. Al identificar y evaluar las competencias necesarias para el éxito en un puesto de trabajo específico, se pueden identificar las áreas de mejora de cada empleado y así diseñar planes de desarrollo personalizados para cerrar esas brechas. Esto contribuye a la retención de talento, el aumento de la satisfacción y motivación de los empleados y el mejoramiento del desempeño general de la organización. El segundo  es la retroalimentación continua y constructiva que se proporciona a los empleados. A través de la retroalimentación regular y específica sobre su desempeño en relación con las competencias, los empleados tienen  una profunda  comprensión de sus fortalezas y áreas de mejora, lo que les permite ajustar su enfoque y mejorar su desempeño. Esto favorece  al desarrollo profesional de los empleados y a la construcción de una cultura de aprendizaje en la organización.</p>
             </div>
             <div className="flex px-4 justify-end">
               <button className={`${styles.button}`} onClick={() => onSelectedRow(6)}>{open === true && selectedRow === 6 ? 'Leer menos' : 'Leer más'}</button>
@@ -197,11 +197,11 @@ export default function Servicios() {
             <div id="box-content" className={`${styles["box-content"]} ${open && selectedRow === 7 ? `${styles.active}` : ``}`}>
               <h5>Nuestro enfoque en el desarrollo y retención del talento. Tu ventaja competitiva</h5>
               <p>El desarrollo y retención de talento son dos aspectos esenciales para el éxito de cualquier organización. El talento, compuesto por las habilidades, conocimientos y capacidades de los empleados, es uno de los recursos más valiosos de una empresa con lo cual es fundamental contar con estrategias efectivas para desarrollar y retenerlos  maximizando su contribución a la organización y asegurar su compromiso a largo plazo. Es clave proporcionar a los empleados oportunidades de crecimiento y aprendizaje que les permitan mejorar sus habilidades y conocimientos.</p>
-              <p>Con nuestra asesoría:</p>
+              <p>Con nuestra asesoría experta:</p>
               <ul>
                 <li>Colaboramos y contribuimos para que  las empresas implementen herramientas que retengan a sus empleados talentosos a largo plazo.</li>
                 <li>Ayudamos a evitar un impacto negativo, tanto en la productividad como en el ambiente laboral, por la pérdida de grandes talentos.</li>
-                <li>Trabajamos en conjunto para que las organizaciones sean valoradas como un empleador atractivo y con una reputación positiva despertando el interés de nuevos talentos.</li>
+                <li>Trabajamos en conjunto para que las organizaciones sean valoradas como un empleador atractivo despertando el interés de nuevos talentos.</li>
                 <li>Fortalecemos dentro de la empresa a los empleados altamente calificados y comprometidos, lo que contribuye a la continuidad del negocio y a la mejora del rendimiento y la productividad.</li>
               </ul>
               <p>LM Consulting brinda las mejores prácticas para el desarrollo y retención de talento. Es importante tener presente que el desarrollo del talento comienza con un proceso de reclutamiento efectivo para atraer a los candidatos adecuados.</p>
