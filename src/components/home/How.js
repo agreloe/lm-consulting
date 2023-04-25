@@ -18,11 +18,11 @@ export default function How() {
         },
         {
             'title':'Facilitamos el ahorro del tiempo y de recursos',
-            'description':'Obtener una asesoría experta en ciertas funciones permite a los equipos internos de recursos humanos enfocarse en actividades estratégicas y de valor agregado, mientras que otras tareas pueden ser manejadas por la consultora. Desde LM Consulting proveemos diferentes herramientas especializadas que ayudan  a optimizar los procesos de recursos humanos, mejorar su eficiencia y aumentar la rentabilidad de las organizaciones.',
+            'description':'Obtener una asesoría experta integral en ciertas funciones permite a los equipos internos de recursos humanos enfocarse en actividades estratégicas y de valor agregado, mientras que otras tareas pueden ser manejadas por la consultora. Desde LM Consulting proveemos diferentes herramientas especializadas que ayudan  a optimizar los procesos de recursos humanos, mejorar su eficiencia y aumentar la rentabilidad de las organizaciones.',
         },
         {
             'title':'Ofrecemos flexibilidad y adaptabilidad.',
-            'description':'Nos adaptamos a las necesidades fluctuantes de las empresas y proporcionamos soluciones a medida según sus requisitos específicos. Ya sea la necesidad de un apoyo temporal para un proyecto concreto  o una solución a largo plazo para el desarrollo de su área o departamento de recursos humanos.',
+            'description':'Nos adaptamos a las necesidades fluctuantes de las empresas y proporcionamos soluciones a medida según sus requisitos específicos. Ya sea un apoyo temporal para un proyecto concreto o una solución a largo plazo para el desarrollo de su área o departamento de recursos humanos.',
         },
         {
             'title':'Conocimiento actualizado de las mejores prácticas del mercado.',
@@ -30,7 +30,7 @@ export default function How() {
         },
         {
             'title':'Acompañamiento en la toma de decisiones y abordaje de posibles dificultades.',
-            'description':'Nuestra colaboración se basa  en nuestras experiencias y conocimientos específicos  resultando beneficioso  para las empresas y sus empleados. Estos escenarios pueden darse sobre su estructura organizacional, sobre la adquisición de nuevos talentos, en conflictos laborales,, en los programas de  de compensación y beneficios, desafíos en la gestión del talento entre otros.',
+            'description':'Nuestra colaboración se basa  en nuestras experiencias y conocimientos específicos  resultando beneficioso  para las empresas y sus empleados. Estos escenarios pueden darse sobre su estructura organizacional, sobre la adquisición de nuevos talentos, en conflictos laborales,en los programas de  de compensaciones  y beneficios, desafíos en la gestión del talento entre otros.',
         },
         {
             'title':'Trabajamos con confidencialidad y objetividad',
