@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '@/styles/About.module.scss'
 import { gsap, Expo } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import useIsomorphicLayoutEffect from '@/helpers/IsomorphicLayoutEffect';
 
 
 export default function About() {
@@ -10,9 +11,10 @@ export default function About() {
   const q = gsap.utils.selector(nosotrosRef);
   gsap.registerPlugin(ScrollTrigger);
   const tl = useRef()
+  const ctx = useRef()
 
-  useLayoutEffect(()=>{
-    let ctx = gsap.context(()=>{
+  useIsomorphicLayoutEffect(()=>{
+    ctx.current = gsap.context(()=>{
       tl.current = gsap
       .timeline()
       .to(nosotrosRef.current,{
@@ -44,11 +46,10 @@ export default function About() {
       end: "bottom top",
       animation: tl.current,
       onEnter: () => {
-        return ()=> ctx.revert()
+        return ()=> ctx.current.revert()
       },
     });
 
-    //return () => ctx.revert()
   },[])
 
   return (

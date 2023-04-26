@@ -4,12 +4,15 @@ import Link from 'next/link'
 import styles from '@/styles/Services.module.scss'
 import { gsap, Expo } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import useIsomorphicLayoutEffect from '@/helpers/IsomorphicLayoutEffect';
+
 
 export default function Services() {
     const servicesRef = useRef()
     const q = gsap.utils.selector(servicesRef);
     gsap.registerPlugin(ScrollTrigger);
     const tl = useRef()
+    const ctx = useRef();
 
     const servicios = [
         {
@@ -49,8 +52,8 @@ export default function Services() {
         }
     ]
 
-    useLayoutEffect(()=>{
-        let ctx = gsap.context(()=>{
+    useIsomorphicLayoutEffect(()=>{
+        ctx.current = gsap.context(()=>{
             tl.current = gsap
             .timeline()
             .to(servicesRef.current,{
@@ -83,10 +86,12 @@ export default function Services() {
             end: "bottom top",
             animation: tl.current,
             onEnter: () => {
-              return ()=> ctx.revert()
+              return ()=> ctx.current.revert()
             },
           });
     },[])
+
+
 
   return (
     <section ref={servicesRef} id='servicios' className={`wrap py-16 sm:pt-32 sm:pb-16 ${styles.servicios}`}>

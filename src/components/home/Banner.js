@@ -2,15 +2,17 @@ import React, {useRef, useLayoutEffect, useEffect} from 'react'
 import styles from '@/styles/Banner.module.scss'
 import Link from 'next/link'
 import { gsap, Expo } from "gsap";
+import useIsomorphicLayoutEffect from '@/helpers/IsomorphicLayoutEffect';
 
 
 export default function Banner() {
   const bannerRef = useRef()
   const q = gsap.utils.selector(bannerRef);
   const tl = useRef()
+  const ctx = useRef();
 
-  useEffect(() => {
-    let ctx = gsap.context(()=>{
+  useIsomorphicLayoutEffect(() => {
+    ctx.current = gsap.context(()=>{
       tl.current = gsap
       .timeline()
       .to(q('.banner-title'),{
@@ -32,7 +34,7 @@ export default function Banner() {
       '-=0.25')
     }, bannerRef)
 
-    return () => ctx.revert()
+    return () => ctx.current.revert()
   }, [])
 
   return (

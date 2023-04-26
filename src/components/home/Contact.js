@@ -6,6 +6,7 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import Link from 'next/link';
 import { gsap, Expo } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import useIsomorphicLayoutEffect from '@/helpers/IsomorphicLayoutEffect';
 
 
 export default function Contact() {
@@ -18,9 +19,10 @@ export default function Contact() {
     const q = gsap.utils.selector(contactoRef);
     gsap.registerPlugin(ScrollTrigger);
     const tl = useRef()
+    const ctx = useRef()
 
-    useLayoutEffect(()=>{
-      let ctx = gsap.context(()=>{
+    useIsomorphicLayoutEffect(()=>{
+      ctx.current = gsap.context(()=>{
         tl.current = gsap
         .timeline()
         .to(contactoRef.current,{
@@ -58,7 +60,7 @@ export default function Contact() {
         end: "bottom top",
         animation: tl.current,
         onEnter: () => {
-          return ()=> ctx.revert()
+          return ()=> ctx.current.revert()
         },
       });
     },[])

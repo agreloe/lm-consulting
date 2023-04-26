@@ -2,6 +2,7 @@ import React, { useState, useRef, useLayoutEffect } from 'react'
 import styles from '@/styles/How.module.scss'
 import { gsap, Expo } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
+import useIsomorphicLayoutEffect from '@/helpers/IsomorphicLayoutEffect';
 
 export default function How() {
     const [open, setOpen] = useState(false);
@@ -44,9 +45,10 @@ export default function How() {
     const q = gsap.utils.selector(howRef);
     gsap.registerPlugin(ScrollTrigger);
     const tl = useRef()
+    const ctx = useRef()
 
-    useLayoutEffect(()=>{
-        let ctx = gsap.context(()=>{
+    useIsomorphicLayoutEffect(()=>{
+        ctx.current = gsap.context(()=>{
         tl.current = gsap
         .timeline()
         .to(howRef.current,{
@@ -84,7 +86,7 @@ export default function How() {
         end: "bottom top",
         animation: tl.current,
         onEnter: () => {
-            return ()=> ctx.revert()
+            return ()=> ctx.current.revert()
         },
         });
 
