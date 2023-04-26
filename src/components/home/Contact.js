@@ -74,17 +74,17 @@ export default function Contact() {
               <ul className={`${styles.socials}`}>
                   <li>
                       <Link href="https://www.linkedin.com/company/lmconsulting-rh/" target='_blank' rel='noopener noreferrer'>
-                          <FontAwesomeIcon icon={faLinkedinIn} />
+                          <FontAwesomeIcon icon={faLinkedinIn} size="xl" />
                       </Link>
                   </li>
                   <li>
                       <Link href="https://wa.link/yqfolk" target='_blank' rel='noopener noreferrer'>
-                          <FontAwesomeIcon icon={faWhatsapp} />
+                          <FontAwesomeIcon icon={faWhatsapp} size="xl" />
                       </Link>
                   </li>
                   <li>
                       <Link href="mailto:hola@lmconsulting-rh.com" target='_blank' rel='noopener noreferrer'>
-                          <FontAwesomeIcon icon={faEnvelope} />
+                          <FontAwesomeIcon icon={faEnvelope} size="xl" />
                       </Link>
                   </li>
               </ul>
