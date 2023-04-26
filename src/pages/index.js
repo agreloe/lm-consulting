@@ -5,12 +5,13 @@ import Services from '@/components/home/Services'
 import About from '@/components/home/About'
 import Contact from '@/components/home/Contact'
 import How from '@/components/home/How'
+import ScrollRestorationDisabler from '@/helpers/scrollRestorationDisabler'
 
 export default function Home() {
   return (
 
       <Fragment>
-        <Head>
+        <ScrollRestorationDisabler>
         <title>
             Mejora tu Gestión de Recursos Humanos con Nuestro Asesoramiento Experto Integral
           </title>
@@ -31,7 +32,7 @@ export default function Home() {
             content="https://i.ibb.co/C1CK47b/Meta-Image-LMConsulting-03.png"
           />
 
-        </Head>
+        </ScrollRestorationDisabler>
         <Banner />
         <About />
         <Services />

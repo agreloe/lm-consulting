@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { gsap, Expo } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import useIsomorphicLayoutEffect from '@/helpers/IsomorphicLayoutEffect';
+import ScrollRestorationDisabler from '@/helpers/scrollRestorationDisabler';
 
 export default function Servicios() {
   const [open, setOpen] = useState(false)
@@ -54,7 +55,7 @@ export default function Servicios() {
 
   return (
     <Fragment>
-      <Head>
+      <ScrollRestorationDisabler>
       <title>
           Conocé nuestros Servicios de Asesoramiento Experto Integral
         </title>
@@ -75,7 +76,7 @@ export default function Servicios() {
           content="https://i.ibb.co/C1CK47b/Meta-Image-LMConsulting-03.png"
         />
 
-      </Head>
+      </ScrollRestorationDisabler>
       <section ref={servRef} >
 
         <section className={`${styles.servicios}`}>
