@@ -28,7 +28,7 @@
         background-image: url('../img/SVG/BannerImgMobile.svg');
         background-size: cover;
         background-position: 50%;
-        min-height: 500px;
+        min-height: calc(100vh - $navHeight);
     }
 
     @include medium-screen {
