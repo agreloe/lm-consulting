@@ -11,7 +11,8 @@
 :root {
   @include body($paragraph, 300, $text-color);
   scroll-padding-top: 5rem;
-  scroll-behavior: smooth !important;
+  //scroll-behavior: smooth !important;
+  overscroll-behavior: none;
 }
 
 body {
@@ -25,7 +26,6 @@ body {
     margin: 0;
     padding: 0;
     overscroll-behavior: none;
-
 }
 
 
