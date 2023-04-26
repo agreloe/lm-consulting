@@ -2,7 +2,7 @@ import React, {useRef, useLayoutEffect} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '@/styles/Services.module.scss'
-import { gsap, Expo } from "gsap/dist/gsap";
+import { gsap, Expo } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 export default function Services() {
@@ -59,7 +59,7 @@ export default function Services() {
             })
             .to(q('.services-title'),{
               opacity: 1,
-              x: 0,
+              y: 0,
               ease: Expo.easeOut
             },
             '-=0.25')

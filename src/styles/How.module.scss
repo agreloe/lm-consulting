@@ -4,8 +4,12 @@
 
     h2, .how-text {
         opacity: 0;
-        transform: translateX(50px);
-    }
+        transform: translateY(50px);
+        -webkit-transform: translateY(50px);
+        -moz-transform: translateY(50px);
+        -ms-transform: translateY(50px);
+        -o-transform: translateY(50px);
+}
 
     .line {
         width: 0px;

@@ -2,7 +2,7 @@ import React, { Fragment, useState, useRef, useLayoutEffect } from 'react'
 import styles from '@/styles/Servicios.module.scss'
 import Head from 'next/head'
 import Image from 'next/image'
-import { gsap, Expo } from "gsap/dist/gsap";
+import { gsap, Expo } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 export default function Servicios() {
@@ -31,7 +31,7 @@ export default function Servicios() {
         })
         .to(q('.serv-title'),{
             opacity: 1,
-            x: 0,
+            y: 0,
             ease: Expo.easeOut
         },
         '-=0.25')

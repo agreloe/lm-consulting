@@ -1,6 +1,6 @@
 import React, { useState, useRef, useLayoutEffect } from 'react'
 import styles from '@/styles/How.module.scss'
-import { gsap, Expo } from "gsap/dist/gsap";
+import { gsap, Expo } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 export default function How() {
@@ -55,7 +55,7 @@ export default function How() {
         })
         .to(q('.how-title'),{
             opacity: 1,
-            x: 0,
+            y: 0,
             ease: Expo.easeOut
         },
         '-=0.25')
@@ -66,7 +66,7 @@ export default function How() {
         '-=0.25')
         .to(q('.how-text'), {
             opacity: 1,
-            x: 0,
+            y: 0,
             ease: Expo.easeOut,
         }, '-=0.25')
         .to(q('.card'), {

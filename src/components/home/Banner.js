@@ -1,7 +1,7 @@
-import React, {useRef, useLayoutEffect} from 'react'
+import React, {useRef, useLayoutEffect, useEffect} from 'react'
 import styles from '@/styles/Banner.module.scss'
 import Link from 'next/link'
-import { gsap, Expo } from "gsap/dist/gsap";
+import { gsap, Expo } from "gsap";
 
 
 export default function Banner() {
@@ -9,24 +9,24 @@ export default function Banner() {
   const q = gsap.utils.selector(bannerRef);
   const tl = useRef()
 
-  useLayoutEffect(() => {
+  useEffect(() => {
     let ctx = gsap.context(()=>{
       tl.current = gsap
       .timeline()
       .to(q('.banner-title'),{
         opacity: 1,
-        x: 0,
+        y: 0,
         ease: Expo.easeOut
       })
       .to(q('.banner-subtitle'),{
         opacity: 1,
-        x: 0,
+        y: 0,
         ease: Expo.easeOut
       },
       '-=0.25')
       .to(q('.banner-button'),{
         opacity: 1,
-        x: 0,
+        y: 0,
         ease: Expo.easeOut
       },
       '-=0.25')

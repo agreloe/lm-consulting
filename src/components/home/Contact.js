@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faLinkedinIn, faWhatsapp } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 import Link from 'next/link';
-import { gsap, Expo } from "gsap/dist/gsap";
+import { gsap, Expo } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 
@@ -29,7 +29,7 @@ export default function Contact() {
         })
         .to(q('.contacto-title'),{
           opacity: 1,
-          x: 0,
+          y: 0,
           ease: Expo.easeOut
         },
         '-=0.25')
@@ -40,13 +40,13 @@ export default function Contact() {
         '-=0.25')
         .to(q('.contacto-text'),{
           opacity: 1,
-          x: 0,
+          y: 0,
           ease: Expo.easeOut
         },
         '-=0.25')
         .to(q('.form'),{
           opacity: 1,
-          x: 0,
+          y: 0,
           ease: Expo.easeOut
         },
         '-=0.25')

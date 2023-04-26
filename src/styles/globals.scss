@@ -14,10 +14,6 @@
   scroll-behavior: smooth !important;
 }
 
-body {
-  width: 100% !important;
-}
-
 *,
 *::before,
 *::after {
@@ -27,6 +23,10 @@ body {
     //overflow-x: hidden;
     //overscroll-behavior: none;
 
+}
+
+body {
+  width: 100vw !important;
 }
 
 body::after {
