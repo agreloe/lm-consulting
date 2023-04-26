@@ -10,6 +10,15 @@
     align-items: center;
     margin-top: $navHeight;
 
+    h1, p, a {
+        opacity: 0;
+        transform: translateX(50px);
+        -webkit-transform: translateX(50px);
+        -moz-transform: translateX(50px);
+        -ms-transform: translateX(50px);
+        -o-transform: translateX(50px);
+}
+
     .button {
         @include button($primary-color);
         margin-top: 1rem;

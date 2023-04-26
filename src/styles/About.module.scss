@@ -11,9 +11,28 @@
     background-repeat: no-repeat;
     background-size: contain;
     background-position: left center;
+    opacity: 0;
+
+    h2 {
+        opacity: 0;
+        transform: translateX(50px);
+        -webkit-transform: translateX(50px);
+        -moz-transform: translateX(50px);
+        -ms-transform: translateX(50px);
+        -o-transform: translateX(50px);
+}
+
+    .about-text {
+        opacity: 0;
+        transform: translateX(50px);
+        -webkit-transform: translateX(50px);
+        -moz-transform: translateX(50px);
+        -ms-transform: translateX(50px);
+        -o-transform: translateX(50px);
+    }
 
     .line {
-        width: 100px;
+        width: 0px;
         height: 3px;
         background-color: #fff;
         display: flex;

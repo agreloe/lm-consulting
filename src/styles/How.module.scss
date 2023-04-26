@@ -1,8 +1,14 @@
 @import 'Variables';
 
 .how {
+
+    h2, .how-text {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
     .line {
-        width: 100px;
+        width: 0px;
         height: 3px;
         background-color: $secondary-color;
         display: flex;
@@ -24,6 +30,8 @@
             border-radius: 10px;
             display: flex;
             flex-direction: column;
+            opacity: 0;
+            transform: translateY(50px);
 
             .description {
                 height: 50px;

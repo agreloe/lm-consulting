@@ -1,9 +1,15 @@
-import React from 'react'
+import React, {useRef, useLayoutEffect} from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import styles from '@/styles/Services.module.scss'
+import { gsap, Expo } from "gsap/dist/gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 
 export default function Services() {
+    const servicesRef = useRef()
+    const q = gsap.utils.selector(servicesRef);
+    gsap.registerPlugin(ScrollTrigger);
+    const tl = useRef()
 
     const servicios = [
         {
@@ -43,22 +49,58 @@ export default function Services() {
         }
     ]
 
+    useLayoutEffect(()=>{
+        let ctx = gsap.context(()=>{
+            tl.current = gsap
+            .timeline()
+            .to(servicesRef.current,{
+              opacity: 1,
+              ease: Expo.easeOut
+            })
+            .to(q('.services-title'),{
+              opacity: 1,
+              x: 0,
+              ease: Expo.easeOut
+            },
+            '-=0.25')
+            .to(q('.line'),{
+              width: 100,
+              ease: Expo.easeOut
+            },
+            '-=0.25')
+            .to(q('.card'), {
+                y: 0,
+                opacity: 1,
+                stagger: 0.2,
+                ease: Expo.easeOut
+            }, '-=0.25')
+
+          }, servicesRef)
+
+          ScrollTrigger.create({
+            trigger: servicesRef.current,
+            start: "top 50%",
+            end: "bottom top",
+            animation: tl.current,
+            onEnter: () => {
+              return ()=> ctx.revert()
+            },
+          });
+    },[])
+
   return (
-    <section id='servicios' className={`wrap py-16 sm:pt-32 sm:pb-16 ${styles.servicios}`}>
-        <h2 className='pb-16 sm:pb-8'>Nuestros Servicios</h2>
-        <span className={`${styles.line} mb-16 sm:mb-8`}></span>
+    <section ref={servicesRef} id='servicios' className={`wrap py-16 sm:pt-32 sm:pb-16 ${styles.servicios}`}>
+        <h2 className={`pb-16 sm:pb-8 services-title ${styles['servicios-title']}`}>Nuestros Servicios</h2>
+        <span className={`${styles.line} mb-16 sm:mb-8 line`}></span>
         <div className={`${styles.cards}`}>
             {
                 servicios.map((item,index)=>(
-                    <Link key={index} href={item.url} className={`${styles.card} min-h-[220px] sm:min-h-[180px]`}>
-
+                    <Link key={index} href={item.url} className={`${styles.card} min-h-[220px] sm:min-h-[180px] card`}>
 
                             <div className='flex gap-4 flex-col sm:flex-row'>
                                 <Image src={item.icon} width={50} height={50} alt='/' />
                                 <h4>{item.title}</h4>
                             </div>
-
-                            {/* <Link className={`${styles['see-more']}`} href={item.url}>Ver más</Link> */}
 
                     </Link>
 

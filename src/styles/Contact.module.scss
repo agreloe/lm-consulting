@@ -2,8 +2,17 @@
 
 .contacto {
 
+    h2, .contacto-text, .form {
+        opacity: 0;
+        transform: translateX(50px);
+        -webkit-transform: translateX(50px);
+        -moz-transform: translateX(50px);
+        -ms-transform: translateX(50px);
+        -o-transform: translateX(50px);
+    }
+
     .line {
-        width: 100px;
+        width: 0px;
         height: 3px;
         background-color: $secondary-color;
         display: flex;
