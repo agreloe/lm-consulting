@@ -25,9 +25,10 @@
     }
 
     @include small-screen {
-        background-image: url('../img/SVG/BannerImgMobile.svg');
+        /* background-image: url('../img/SVG/BannerImgMobile.svg');
         background-size: cover;
-        background-position: 50%;
+        background-position: 50%; */
+        background-image: none;
         min-height: 500px;
     }
 

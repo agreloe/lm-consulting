@@ -1,7 +1,5 @@
 @import 'Variables';
 
-
-
 .about {
     background-color: $primary-color;
     min-height: 600px;
@@ -20,7 +18,7 @@
         -moz-transform: translateY(50px);
         -ms-transform: translateY(50px);
         -o-transform: translateY(50px);
-}
+    }
 
     .about-text {
         opacity: 0;
@@ -42,6 +40,18 @@
     @include small-screen {
         min-height: 400px;
         background-image: none;
+        position: relative;
+
+        &:after {
+            content: '';
+            height: 70px;
+            position: absolute;
+            background-image: url('../img/SVG/LMConsultingBorderTop.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            top: -70px;
+            width: 100%;
+        }
     }
 
     @include medium-screen {

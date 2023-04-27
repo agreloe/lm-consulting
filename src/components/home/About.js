@@ -65,11 +65,8 @@ export default function About() {
                   <p className='text-white text-right pb-4 sm:text-left'>Nuestros valores hacen que marquemos la diferencia en nuestro trabajo día a día, son nuestra esencia y razón de ser. Nos guían el Compromiso, Profesionalismo, Transparencia, Dedicación, Integridad y Empatía</p>
                 </div>
             </div>
-
-
-
         </section>
-
     </Fragment>
+
   )
 }

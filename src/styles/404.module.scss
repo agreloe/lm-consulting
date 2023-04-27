@@ -1,0 +1,12 @@
+@import 'Variables';
+
+.error {
+    min-height: calc(100vh - $navHeight);
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+    .button {
+        @include button($primary-color);
+    }
+}
