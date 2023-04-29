@@ -7,6 +7,7 @@ module.exports = {
   experimental: {
     scrollRestoration: true,
   },
+  distDir: 'build',
   reactStrictMode: true,
   images: {
     remotePatterns: [

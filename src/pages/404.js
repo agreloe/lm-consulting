@@ -19,7 +19,7 @@ export default function Error() {
           content="Parece que la pagina que estás buscando no existe o se encuentra bajo mantenimiento. Por favor intente más tarde. Muchas gracias"
         ></meta>
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://lm-consulting.netlify.app" />
+        <meta property="og:url" content="https://lmconsulting-rh.com" />
         <meta property="og:title" content="Error | Página no encontrada" />
         <meta property="og:description" content="Parece que la pagina que estás buscando no existe o se encuentra bajo mantenimiento. Por favor intente más tarde. Muchas gracias" />
         <meta

@@ -24,7 +24,7 @@ export default function Home() {
             content="Potencia el rendimiento de tu equipo con nuestro asesoramiento experto integral en recursos humanos. Ofrecemos soluciones especializadas en reclutamiento, selección, evaluación, desarrollo y retención del talento. Descubre cómo optimizar tu gestión de recursos humanos con nuestra experiencia y conocimientos."
           ></meta>
           <meta property="og:type" content="website" />
-          <meta property="og:url" content="https://lm-consulting.netlify.app/" />
+          <meta property="og:url" content="https://lmconsulting-rh.com" />
           <meta property="og:title" content="Mejora tu Gestión de Recursos Humanos con Nuestro Asesoramiento Experto Integral" />
           <meta property="og:description" content="Potencia el rendimiento de tu equipo con nuestro asesoramiento experto integral en recursos humanos. Ofrecemos soluciones especializadas en reclutamiento, selección, evaluación, desarrollo y retención del talento. Descubre cómo optimizar tu gestión de recursos humanos con nuestra experiencia y conocimientos." />
           <meta
